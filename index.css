@@ -19,6 +19,12 @@
 /** Section **/
 /**/
 
+.section-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button {
     background-color: var(--secondary-gray-color);
     color: var(--primary-black-color);
@@ -60,7 +66,9 @@
   .dropdown-content .drop-item{
     color: black;
     padding: 16px 16px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
   }
   
@@ -70,7 +78,10 @@
   }
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
   
   .dropdown:hover .dropbtn  {
