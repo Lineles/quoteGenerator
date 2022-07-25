@@ -14,6 +14,28 @@
 }
 
 
+/**
+/** Main **/
+/**/
+
+main{
+  min-height: 350px;
+}
+
+#quote-background-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  min-height: 300px;
+  border-radius: 40px;
+  margin: 10px 40px;
+}
+
+#quote{
+  font-size: 50px;
+}
+
 
 /**
 /** Section **/
