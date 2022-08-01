@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Cormorant Garamond', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond'); 
+    font-style: italic;
+    font-weight: 700;  
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond'); 
+    font-style: normal;
+    font-weight: 400;  
+}
+
+@font-face {
+    font-family: 'Acme', sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+}
+
+.navigation_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    align-items: center;
+}
+
+a {
+    font-family: Acme, sans-serif;
+    font-weight: 400;
+}
