@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #118a58;
     --secondary-color: #857016;
@@ -12,7 +13,6 @@
     margin-left: 16px;
     margin-right: 16px;
 }
-
 
 @font-face {
     font-family: 'Cormorant Garamond', sans-serif;
@@ -156,3 +156,4 @@ main{
     .dropdown:hover .dropbtn  {
       background-color: var(--primary-color);
     }
+
