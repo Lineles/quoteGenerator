@@ -4,9 +4,19 @@
 
 // create function color change
         // this function should take 1 parameter (witch is either the choosen collor or a random collor)
-        // it should change the Backgroundcollor of the main Div element to the chosen color
+        
         // it should also make the border of the aktiv button red
+function colorChange (input) {
 
+        if{ in}
+
+
+
+// it should change the Backgroundcollor of the main Div element to the chosen color
+       
+const background = document.getElementById("quote-background-flex")
+        background.style.backgroundColor = chosenColor
+}
 
 
 // create function textStyle change
