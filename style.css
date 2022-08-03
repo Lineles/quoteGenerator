@@ -57,20 +57,33 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF5EE;
+    border: solid 1px #FAF0E6;
 }
 
 .title {
   font-family: 'Cormorant Garamond', sans-serif;
   font-weight: 700;
+  font-size: 32px;
+  color: #000000;
 }
 
 .navigation_links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 320px;
 }
 
+
+a {
+    font-family: Acme, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
 
 
 /**
