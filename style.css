@@ -95,10 +95,11 @@ a {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    min-height: 300px;
-    border-radius: 40px;
     margin: 10px 0px;
     border: solid 4px var(--primary-black-color);
+    border-radius: 40px;
+    padding: 36px 0;
+    height: 520px;
   }
   
   #quote{
