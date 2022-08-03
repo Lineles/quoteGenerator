@@ -3,20 +3,15 @@
 
 
 // create function color change
-        // this function should take 1 parameter (witch is either the choosen collor or a random collor)
-        
-        // it should also make the border of the aktiv button red
+        // this function should take 1 parameter (witch is either the choosen collor or a random collor)    
 function colorChange(input) {
-        if (input === cyan) {
-                document.getElementById("quote-background-flex").style.backgroundColor = "cyan";
-        }
-
-
-
-
-        
+        const collorArray = ["red", "orange", "yellow", "green", "cyan", "blue", "indigo", "purple", "pink"];
+        const color = collorArray[input]     
+             
 // it should change the Backgroundcollor of the main Div element to the chosen color
-       
+        document.getElementById("quote-background-flex").style.backgroundColor = color;
+        
+// it should also make the border of the aktiv button red      
 }
        
 
