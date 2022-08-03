@@ -1,5 +1,5 @@
 // crete pseudo Quote Array 
-
+                
 
 
 // create function color change
@@ -27,7 +27,7 @@
 // create function quote change 
         // this function should randomly change the showen Quote
         // it should also get triggert when the random button ist presst
-
+        //
 
 
 // create function random everything 
