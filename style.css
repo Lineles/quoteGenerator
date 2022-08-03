@@ -94,7 +94,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: red;
     margin: 10px 0px;
     border: solid 4px var(--primary-black-color);
     border-radius: 40px;
@@ -189,46 +189,46 @@ a {
 
 
 .red{
-  background-color: red;
-  color: red;
+  background-color: #ff0000;
+  color: #ff0000;
 }
 
 .orange{
-  background-color: orange;
-  color: orange;
+  background-color: #ffa500;
+  color: #ffa500;
 }
 
 .yellow{
-  background-color: yellow;
-  color: yellow;
+  background-color: #ffff00;
+  color: #ffff00;
 }
 
 .green{
-  background-color: green;
-  color: green;
+  background-color: #008000;
+  color: #008000;
 }
 
 .cyan{
-  background-color: cyan;
-  color: cyan;
+  background-color: #00ffff;
+  color: #00ffff;
 }
 
 .blue{
-  background-color: blue;
-  color: blue;
+  background-color: #0000ff;
+  color: #0000ff;
 }
 
 .indigo{ 
-  background-color: indigo;
-  color: indigo;
+  background-color: #4b0082;
+  color: #4b0082;
 }
 
 .purple{
-  background-color: purple;
-  color: purple;
+  background-color: #800080;
+  color: #800080;
 }
 
 .pink{
-  background-color: pink;
-  color: pink;
+  background-color: #ffc0cb;
+  color: #ffc0cb;
 }
