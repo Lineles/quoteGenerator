@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #118a58;
-    --secondary-color: #857016;
+    --secondary-color: #deb887;
     --primary-black-color: #1D1C1C;
     --primary-darkgrey-color: #917D6E;
     --secondary-gray-color: #F6F2EF; 
@@ -35,6 +35,21 @@
     font-weight: 400;
 }
 
+a {
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+button {
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+}
+
+main{
+    min-height: 350px;
+  }
+
 /** Navbar **/
 
 .navbar {
@@ -56,19 +71,12 @@
     align-items: center;
 }
 
-a {
-    font-family: Acme, sans-serif;
-    font-weight: 400;
-}
+
 
 /**
 /** Main **/
 /**/
-
-main{
-    min-height: 350px;
-  }
-  
+ 
   #quote-background-flex{
     display: flex;
     justify-content: center;
@@ -77,6 +85,7 @@ main{
     min-height: 300px;
     border-radius: 40px;
     margin: 10px 40px;
+    border: solid 4px var(--primary-black-color);
   }
   
   #quote{
@@ -99,21 +108,21 @@ main{
       color: var(--primary-black-color);
       padding: 8px 16px;
       font-size: 16px;
-      border: none;
+      border: solid 2px var(--primary-black-color);
       border-radius: 16px;
     }
     
     .button:hover{
-      background-color: var(--primary-color);
+      background-color: var(--secondary-color);
     }
   
   /* Dropdown Button */
   .dropbtn {
       background-color: var(--secondary-gray-color);
-      color: var(--primary-black-color);
+      /* color: var(--primary-black-color); */
       padding: 8px 16px;
       font-size: 16px;
-      border: none;
+      border: solid 2px var(--primary-black-color);
       border-radius: 16px;
     }
     
@@ -125,25 +134,30 @@ main{
     .dropdown-content {
       display: none;
       position: absolute;
+      top: 40px;
       background-color: var(--secondary-gray-color);
       min-width: 160px;
-      box-shadow: 5px 5px 5px var(--primary-color);
+      /* box-shadow: 5px 5px 5px var(--primary-color); */
       z-index: 1;
       right: 20;
     }
     
     .dropdown-content .drop-item{
-      color: black;
-      padding: 16px 16px;
+      /* color: black; */
+      padding: 0px 0px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
+      height: 50px;
+      width: 50px;
+      border: solid 2px var(--primary-black-color);
     }
     
     .dropdown-content .drop-item:hover {
-      background-color: var(--secondary-color);
-      color: var(--primary-white-color);
+      border: solid 4px var(--primary-color);
+      /* color: var(--primary-white-color); */
+      border-radius: 8px;
     }
     
     .dropdown:hover .dropdown-content {
@@ -154,6 +168,53 @@ main{
     }
     
     .dropdown:hover .dropbtn  {
-      background-color: var(--primary-color);
+      background-color: var(--secondary-color)
     }
 
+/* Dropdown Color Button */
+
+
+.red{
+  background-color: red;
+  color: red;
+}
+
+.orange{
+  background-color: orange;
+  color: orange;
+}
+
+.yellow{
+  background-color: yellow;
+  color: yellow;
+}
+
+.green{
+  background-color: green;
+  color: green;
+}
+
+.cyan{
+  background-color: cyan;
+  color: cyan;
+}
+
+.blue{
+  background-color: blue;
+  color: blue;
+}
+
+.indigo{ 
+  background-color: indigo;
+  color: indigo;
+}
+
+.purple{
+  background-color: purple;
+  color: purple;
+}
+
+.pink{
+  background-color: pink;
+  color: pink;
+}
