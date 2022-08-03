@@ -1,5 +1,234 @@
-quote_container {
+
+:root {
+    --primary-color: #118a58;
+    --secondary-color: #deb887;
+    --primary-black-color: #1D1C1C;
+    --primary-darkgrey-color: #917D6E;
+    --secondary-gray-color: #F6F2EF; 
+    --primary-white-color:#FFFFFF;
+  }
+
+body{ 
+    background-color: var(--secondary-gray-color);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond'); 
+    font-style: italic;
+    font-weight: 700;  
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond'); 
+    font-style: normal;
+    font-weight: 400;  
+}
+
+@font-face {
+    font-family: 'Acme', sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+button {
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+}
+
+main{
+    min-height: 350px;
+  }
+
+/** Navbar **/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF5EE;
+    border: solid 1px #FAF0E6;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+}
+
+.navigation_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+}
+
+
+a {
+    font-family: Acme, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/**
+/** Main **/
+/**/
+ 
+  #quote-background-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 10px 0px;
+    border: solid 4px var(--primary-black-color);
     border-radius: 40px;
     padding: 36px 0;
     height: 520px;
+  }
+  
+  #quote{
+    font-size: 50px;
+  }
+  
+  
+  /**
+  /** Section **/
+  /**/
+  
+  .section-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+      background-color: var(--secondary-gray-color);
+      color: var(--primary-black-color);
+      padding: 8px 16px;
+      font-size: 16px;
+      border: solid 2px var(--primary-black-color);
+      border-radius: 16px;
+    }
+    
+    .button:hover{
+      background-color: var(--secondary-color);
+    }
+  
+  /* Dropdown Button */
+  .dropbtn {
+      background-color: var(--secondary-gray-color);
+      /* color: var(--primary-black-color); */
+      padding: 8px 16px;
+      font-size: 16px;
+      border: solid 2px var(--primary-black-color);
+      border-radius: 16px;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background-color: var(--secondary-gray-color);
+      min-width: 160px;
+      /* box-shadow: 5px 5px 5px var(--primary-color); */
+      z-index: 1;
+      right: 20;
+    }
+    
+    .dropdown-content .drop-item{
+      /* color: black; */
+      padding: 0px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      height: 50px;
+      width: 50px;
+      border: solid 2px var(--primary-black-color);
+    }
+    
+    .dropdown-content .drop-item:hover {
+      border: solid 4px var(--primary-color);
+      /* color: var(--primary-white-color); */
+      border-radius: 8px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    
+    .dropdown:hover .dropbtn  {
+      background-color: var(--secondary-color)
+    }
+
+/* Dropdown Color Button */
+
+
+.red{
+  background-color: red;
+  color: red;
+}
+
+.orange{
+  background-color: orange;
+  color: orange;
+}
+
+.yellow{
+  background-color: yellow;
+  color: yellow;
+}
+
+.green{
+  background-color: green;
+  color: green;
+}
+
+.cyan{
+  background-color: cyan;
+  color: cyan;
+}
+
+.blue{
+  background-color: blue;
+  color: blue;
+}
+
+.indigo{ 
+  background-color: indigo;
+  color: indigo;
+}
+
+.purple{
+  background-color: purple;
+  color: purple;
+}
+
+.pink{
+  background-color: pink;
+  color: pink;
 }
