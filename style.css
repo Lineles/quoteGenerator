@@ -35,6 +35,21 @@
     font-weight: 400;
 }
 
+a {
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+button {
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+}
+
+main{
+    min-height: 350px;
+  }
+
 /** Navbar **/
 
 .navbar {
@@ -56,19 +71,12 @@
     align-items: center;
 }
 
-a {
-    font-family: Acme, sans-serif;
-    font-weight: 400;
-}
+
 
 /**
 /** Main **/
 /**/
-
-main{
-    min-height: 350px;
-  }
-  
+ 
   #quote-background-flex{
     display: flex;
     justify-content: center;
@@ -99,12 +107,12 @@ main{
       color: var(--primary-black-color);
       padding: 8px 16px;
       font-size: 16px;
-      border: none;
+      border: solid 2px black;
       border-radius: 16px;
     }
     
     .button:hover{
-      background-color: var(--secondary-color)
+      background-color: var(--secondary-color);
     }
   
   /* Dropdown Button */
@@ -113,7 +121,7 @@ main{
       /* color: var(--primary-black-color); */
       padding: 8px 16px;
       font-size: 16px;
-      border: none;
+      border: solid 2px black;
       border-radius: 16px;
     }
     
@@ -125,6 +133,7 @@ main{
     .dropdown-content {
       display: none;
       position: absolute;
+      top: 40px;
       background-color: var(--secondary-gray-color);
       min-width: 160px;
       /* box-shadow: 5px 5px 5px var(--primary-color); */
