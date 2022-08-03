@@ -8,10 +8,10 @@
     --primary-white-color:#FFFFFF;
   }
 
-.body{ 
+body{ 
     background-color: var(--secondary-gray-color);
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 @font-face {
@@ -97,7 +97,7 @@ a {
     background-color: var(--primary-color);
     min-height: 300px;
     border-radius: 40px;
-    margin: 10px 40px;
+    margin: 10px 0px;
     border: solid 4px var(--primary-black-color);
   }
   
