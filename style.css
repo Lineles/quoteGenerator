@@ -159,3 +159,38 @@ main{
       background-color: var(--primary-color);
     }
 
+.red{
+  background-color: red;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+}
+
+.cyan{
+  background-color: cyan;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.indigo{ 
+  background-color: indigo;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.pink{
+  background-color: pink;
+}
