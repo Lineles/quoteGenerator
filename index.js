@@ -25,11 +25,7 @@ function justifyText(input) {
         const alighment = alighments[input];
         document.getElementById("quote-background-flex").style.justifyContent = alighment;
 }
-        // this function should take 1 parameter (witch is either the choosen alighment or a random alighment)
-        // it should cange the Quote alighment to the chosen one
         
-
-
 
 // create function quote change 
         // this function should randomly change the showen Quote
