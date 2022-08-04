@@ -94,7 +94,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: red;
     margin: 10px 0px;
     border: solid 4px var(--primary-black-color);
     border-radius: 40px;
@@ -189,46 +189,46 @@ a {
 
 
 .red{
-  background-color: red;
-  color: red;
+  background-color: #cf2626;
+  color: #cf2626;
 }
 
 .orange{
-  background-color: orange;
-  color: orange;
+  background-color: #db9e2c;
+  color: #db9e2c;
 }
 
 .yellow{
-  background-color: yellow;
-  color: yellow;
+  background-color: #c0c00b;
+  color: #c0c00b;
 }
 
 .green{
-  background-color: green;
-  color: green;
+  background-color: #0e910e;
+  color: #0e910e;
 }
 
 .cyan{
-  background-color: cyan;
-  color: cyan;
+  background-color: #11dfdf;
+  color: #11dfdf;
 }
 
 .blue{
-  background-color: blue;
-  color: blue;
+  background-color: #2f32e9;
+  color: #2f32e9;
 }
 
 .indigo{ 
-  background-color: indigo;
-  color: indigo;
+  background-color: #63159b;
+  color: #63159b;
 }
 
 .purple{
-  background-color: purple;
-  color: purple;
+  background-color: #8f178f;
+  color: #8f178f;
 }
 
 .pink{
-  background-color: pink;
-  color: pink;
+  background-color: #e27487;
+  color: #e27487;
 }
