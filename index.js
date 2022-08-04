@@ -39,3 +39,17 @@ function justifyText(input) {
                 // randomly chose a text Style and call the text style function
                 // randomly chose a quote
                 // randomly chose a alighment
+
+
+// create setings menu 
+function settingsMenu() {
+        const element = document.getElementById("settings")
+        const style = element.style.display;
+
+        if (style === "none") {
+                document.getElementById("settings").style.display = "flex";
+        }
+        if (style === "flex") {
+                document.getElementById("settings").style.display = "none";
+        }
+}
