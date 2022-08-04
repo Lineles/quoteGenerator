@@ -93,7 +93,7 @@ a {
   #quote-background-flex{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     background-color: red;
     margin: 10px 0px;
     border: solid 4px var(--primary-black-color);
