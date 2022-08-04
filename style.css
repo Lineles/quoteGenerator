@@ -35,7 +35,7 @@ body{
     font-weight: 400;
 }
 
-a {
+a, p{
     font-family: 'Acme', sans-serif;
     font-weight: 600;
     text-decoration: none; 
@@ -126,66 +126,55 @@ a {
       border-radius: 16px;
     }
     
-    .button:hover{
+  .button:hover{
       background-color: var(--secondary-color);
     }
   
-  /* Dropdown Button */
-  .dropbtn {
-      background-color: var(--secondary-gray-color);
-      /* color: var(--primary-black-color); */
-      padding: 8px 16px;
-      font-size: 16px;
-      border: solid 2px var(--primary-black-color);
-      border-radius: 16px;
-    }
-    
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 40px;
-      background-color: var(--secondary-gray-color);
-      min-width: 160px;
-      /* box-shadow: 5px 5px 5px var(--primary-color); */
-      z-index: 1;
-      right: 20;
-    }
-    
-    .dropdown-content .drop-item{
-      /* color: black; */
-      padding: 0px 0px;
+    .settings-flex{
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      text-decoration: none;
-      height: 50px;
-      width: 50px;
-      border: solid 2px var(--primary-black-color);
+      align-items: center;
     }
-    
-    .dropdown-content .drop-item:hover {
-      border: solid 4px var(--primary-color);
-      /* color: var(--primary-white-color); */
-      border-radius: 8px;
-    }
-    
-    .dropdown:hover .dropdown-content {
+    .text-editing-flex{
       display: flex;
-      align-items: center;
+      flex-direction: row;
       justify-content: center;
+      align-items: center;
       gap: 5px;
     }
-    
-    .dropdown:hover .dropbtn  {
-      background-color: var(--secondary-color)
+    .color-change-flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .settings-item{
+      width: 55px;
+      height: 55px;
+      border: solid 2px black;
+      background-color: var(--secondary-gray-color);
+      border-radius: 8px;
+    }
+    .settings-item:hover{
+      width: 55px;
+      height: 55px;
+      border: solid 4px green;
+      border-radius: 8px;
     }
 
-/* Dropdown Color Button */
+
+
+
+
+
+
+
+
+
+
+
 
 
 .red{
