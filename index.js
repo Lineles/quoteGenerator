@@ -60,8 +60,17 @@ function justifyText(input) {
         // it should also get triggert when the random button ist presst
         
 
+//------//
+// Randomise all function
+//------//
+function randomiseAll() {
+        const randomNumber = '##';
+        
 
-// create function random everything 
+
+
+}
+ 
         // this function should 
                 // randomly chose a collor and call the color function with it 
                 // randomly chose a text Style and call the text style function
