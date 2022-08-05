@@ -42,14 +42,13 @@ function justifyText(input) {
 
 
 // create setings menu 
-function settingsMenu() {
-        const element = document.getElementById("settings")
-        const style = element.style.display;
+const settingsMenu = document.getElementById("settings"); 
 
-        if (style === "none") {
-                document.getElementById("settings").style.display = "flex";
-        }
-        if (style === "flex") {
-                document.getElementById("settings").style.display = "none";
-        }
+function showSettingsMenu() {
+        const checkSettingsStatus = settingsMenu.style.display; 
+        if (checkSettingsStatus === "none") {
+                settingsMenu.style.display = "flex"; 
+        } else {
+                settingsMenu.style.display = "none"; 
+        }    
 }
