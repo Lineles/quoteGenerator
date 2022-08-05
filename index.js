@@ -2,7 +2,7 @@
                 
 
 
-// Color Change    
+// Color Change  Function  
 function colorChange(input) {
         const collorArray = ["#cf2626", "#db9e2c", "#c0c00b", "#0e910e", "#11dfdf", "#2f32e9", "#63159b", "#8f178f", "#e27487"];
         const color = collorArray[input]             
@@ -14,12 +14,12 @@ function colorChange(input) {
 // create function textStyle change
         // this function should give you the posebiliti to choose all 3 options (bold/italic/underlined) at the same time
         // it should also randomly select the options if the random button is presst
-        // it should change the Quotes text style to the chosen one
+        
         
 
 
 
-// create function text Justify change
+// Alighn Text Function (Left / Center / Right)
 function justifyText(input) {
         const alighments = ["flex-start", "center", "flex-end"]
         const alighment = alighments[input];
@@ -41,7 +41,11 @@ function justifyText(input) {
                 // randomly chose a alighment
 
 
-// create setings menu 
+
+
+
+
+// Open & Close Setings Menu 
 const settingsMenu = document.getElementById("settings"); 
 
 function showSettingsMenu() {
