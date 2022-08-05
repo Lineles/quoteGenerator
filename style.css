@@ -104,6 +104,7 @@ a {
   
   #quote{
     font-size: 50px;
+    padding: 70px;
   }
   
   
@@ -164,18 +165,9 @@ a {
       border-radius: 8px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  /**
+  /** Settings Menu Buttons **/
+  /**/
 
 .red{
   background-color: #cf2626;
