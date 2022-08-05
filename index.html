@@ -27,30 +27,41 @@
         </div>
     </main>
 
-    <section class="section-flex">
-            <div class="dropdown">
-                <button type="submit" class="dropbtn">Settings</button>
-                <div class="dropdown-content">
-                    <button type="submit" class="drop-item" onclick="justifyText(0)"><img src="img\left-alighn.jpg" alt="left-alighnt" height="40px"></button>
-                    <button type="submit" class="drop-item" onclick="justifyText(1)"><img src="img\center-alighn.jpg" alt="center-alighnt" height="40px"> </button>
-                    <button type="submit" class="drop-item" onclick="justifyText(2)"><img src="img\right-alighn.jpg" alt="right-alighnt" height="40px"> </button>
-                    <button type="submit" class="drop-item red" onclick="colorChange(0)"> . </button>
-                    <button type="submit" class="drop-item orange" onclick="colorChange(1)">.  </button>
-                    <button type="submit" class="drop-item yellow" onclick="colorChange(2)">.  </button>
-                    <button type="submit" class="drop-item green" onclick="colorChange(3)"> . </button>
-                    <button type="submit" class="drop-item cyan" onclick="colorChange(4)"> . </button>
-                    <button type="submit" class="drop-item blue" onclick="colorChange(5)">  .</button>
-                    <button type="submit" class="drop-item indigo" onclick="colorChange(6)">.  </button>
-                    <button type="submit" class="drop-item purple" onclick="colorChange(7)">.  </button>
-                    <button type="submit" class="drop-item pink" onclick="colorChange(8)">  .</button>
-                    <button type="submit" class="drop-item" onclick="    "><img src="img\bold.jpg" alt="right-alighnt" height="40px"> </button>
-                    <button type="submit" class="drop-item" onclick="    "><img src="img\italic.jpg" alt="right-alighnt" height="40px"> </button>
-                    <button type="submit" class="drop-item" onclick="    "><img src="img\Underlined.jpg" alt="right-alighnt" height="40px"> </button>
-                </div>
-            </div>  
+    <section>
+        <div class="section-flex">
+            <button type="submit" class="button" onclick="showSettingsMenu()">Settings</button>
+
             <button type="submit" class="button" onclick="  ">New Quote</button>
             
             <button type="submit" class="button" onclick="   ">Random</button>
+        </div>  
+        
+        
+        <div class="settings-flex" id="settings">
+
+            <p> Text Editing: </p>
+            <div class="text-editing-flex">
+                <button type="submit" class="settings-item" onclick="justifyText(0)"><img src="img\left-alighn.jpg" alt="left-alighnt" height="40px"></button>
+                <button type="submit" class="settings-item" onclick="justifyText(1)"><img src="img\center-alighn.jpg" alt="center-alighnt" height="40px"> </button>
+                <button type="submit" class="settings-item" onclick="justifyText(2)"><img src="img\right-alighn.jpg" alt="right-alighnt" height="40px"> </button>
+                <button type="submit" class="settings-item" onclick="    "><img src="img\bold.jpg" alt="right-alighnt" height="40px"> </button>
+                <button type="submit" class="settings-item" onclick="    "><img src="img\italic.jpg" alt="right-alighnt" height="40px"> </button>
+                <button type="submit" class="settings-item" onclick="    "><img src="img\Underlined.jpg" alt="right-alighnt" height="40px"> </button>
+            </div>
+            <p>Change Background:</p>
+            <div class="color-change-flex">
+                <button type="submit" class="settings-item red" onclick="colorChange(0)"> . </button>
+                <button type="submit" class="settings-item orange" onclick="colorChange(1)">.  </button>
+                <button type="submit" class="settings-item yellow" onclick="colorChange(2)">.  </button>
+                <button type="submit" class="settings-item green" onclick="colorChange(3)"> . </button>
+                <button type="submit" class="settings-item cyan" onclick="colorChange(4)"> . </button>
+                <button type="submit" class="settings-item blue" onclick="colorChange(5)">  .</button>
+                <button type="submit" class="settings-item indigo" onclick="colorChange(6)">.  </button>
+                <button type="submit" class="settings-item purple" onclick="colorChange(7)">.  </button>
+                <button type="submit" class="settings-item pink" onclick="colorChange(8)">  .</button>
+            </div>
+        </div>
+    
          
     </section>
 
