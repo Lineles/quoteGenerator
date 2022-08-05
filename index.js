@@ -11,22 +11,34 @@ function colorChange(input) {
        
 
 
-// create function textStyle change
-        // this function should give you the posebiliti to choose all 3 options (bold/italic/underlined) at the same time
-        // it should also randomly select the options if the random button is presst
+// create function textStyle change       
 const quote = document.getElementById("quote");
  
-const italicStatus = quote.style.fontStyle;
-const underlinedStatus = quote.style.textDecoration; 
-
-function changeTextStyle() {
+function changeFontWeight() {
         const boldStatus = quote.style.fontWeight; 
         if (boldStatus === "normal"){
                 quote.style.fontWeight = "bold"; 
         } else {
                 quote.style.fontWeight = "normal";
-        }  
-      
+        }    
+ }       
+
+ function changeFontStyle() {
+        const italicStatus = quote.style.fontStyle;
+        if (italicStatus === "normal"){
+                quote.style.fontStyle = "italic" 
+        } else {
+                quote.style.fontStyle = "normal" 
+        }    
+ }    
+ 
+ function changeTextDecoration() {
+        const underlinedStatus = quote.style.textDecoration; 
+        if (underlinedStatus === ""){
+ 
+        } else {
+             
+        }    
  }       
         
 
