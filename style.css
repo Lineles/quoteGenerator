@@ -147,6 +147,15 @@ a {
       align-items: center;
       gap: 5px;
     }
+
+    .color-change-masterflex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
     .color-change-flex{
       display: flex;
       flex-direction: row;
