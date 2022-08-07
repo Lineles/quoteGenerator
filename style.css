@@ -68,10 +68,6 @@ main{
   border-radius: 16px;
 }
 
-p {
-  font-size: 8px;
-}
-
   #quote-background-flex{
     display: flex;
     justify-content: center;
@@ -87,7 +83,7 @@ p {
   }
   
   #quote{
-    font-size: 50px;
+    font-size: 32px;
   }
   
   
