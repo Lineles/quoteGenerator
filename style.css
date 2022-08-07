@@ -125,12 +125,17 @@ a {
     }
 
     .text-editing-flex{
-
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
     
     .dropdown-content .drop-item:hover {
       border: solid 1px var(--primary-color);
-      /* color: var(--primary-white-color); */
       border-radius: 8px;
+       /* color: var(--primary-white-color); */
     }
   
     
@@ -171,7 +176,7 @@ a {
       border: solid 4px green;
       border-radius: 8px;
     }
-  }
+  
   /**
   /** Settings Menu Buttons **/
   /**/

@@ -1,6 +1,6 @@
 // create pseudo Quote Array 
  let quotes = [
-        "The way to get started is to quit talking and begin doing. -Walt Disney",
+        "The way to get started is to quit talking and begin doing. - Walt Disney",
         "The journey of a thousand miles begins with one step. - Lao Tzu",
         "That which does not kill us makes us stronger. - Friedrich Nietzsche",
         "You must be the change you wish to see in the world. - Mahatma Gandhi",
