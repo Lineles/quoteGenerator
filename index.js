@@ -5,7 +5,7 @@
 // Color Change  Function  
 //------//
 function colorChange(input) {
-        const collorArray = ["#cf2626", "#db9e2c", "#c0c00b", "#0e910e", "#11dfdf", "#2f32e9", "#63159b", "#8f178f", "#e27487"];
+        const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
         const color = collorArray[input]             
         document.getElementById("quote-background-flex").style.backgroundColor = color;         
 }
@@ -60,8 +60,17 @@ function justifyText(input) {
         // it should also get triggert when the random button ist presst
         
 
+//------//
+// Randomise all function
+//------//
+function randomiseAll() {
+        const randomNumber = '##';
+        
 
-// create function random everything 
+
+
+}
+ 
         // this function should 
                 // randomly chose a collor and call the color function with it 
                 // randomly chose a text Style and call the text style function
