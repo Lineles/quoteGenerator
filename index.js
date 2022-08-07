@@ -66,7 +66,7 @@ function changeFontWeight() {
  }       
         
 
-<<<<<<< HEAD
+
 
 //------//
 // Alighn Text Function (Left / Center / Right)
@@ -121,8 +121,8 @@ function showSettingsMenu() {
                 settingsMenu.style.display = "none"; 
         }    
 }
-=======
+
 // create function random everything 
         // this function should 
                 // randomly chose a collor and call the color function with 
->>>>>>> 4a0f734cc1244456080f05ed123e272632df7950
+
