@@ -64,9 +64,7 @@ function justifyText(input) {
 // Randomise all function
 //------//
 function randomiseAll() {
-        const randomNumber = function() {
-             return Math.random(); 
-        }
+        const randomNumber = giveRandomNumber();
 
         //random Color//
         const randomColor = Math.floor(randomNumber * 18);   
@@ -75,15 +73,15 @@ function randomiseAll() {
         //random Alighment//
         const randomAlighment = Math.floor(randomNumber * 3);
         justifyText(randomAlighment); 
-
 }
- 
-        // this function should 
-                // randomly chose a collor and call the color function with it 
-                // randomly chose a text Style and call the text style function
-                // randomly chose a quote
-                // randomly chose a alighment
 
+
+//------//
+// Give Random Number
+//------//
+function giveRandomNumber() {
+        return Math.random();
+}
 
 
 
