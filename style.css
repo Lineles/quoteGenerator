@@ -20,11 +20,7 @@ a {
     font-weight: 400;
     text-decoration: none;
     font-size: 19px;
-}
-
-button {
-  font-family: 'Acme', sans-serif;
-  font-weight: 600;
+    color: var(--primary-black-color);
 }
 
 main{
@@ -57,20 +53,21 @@ main{
     width: 320px;
 }
 
-
-a {
-    font-family: Acme, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--primary-black-color);
-}
-
-
 /**
 /** Main **/
 /**/
- 
+
+.button {
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+  background-color: var(--secondary-gray-color);
+  color: var(--primary-black-color);
+  padding: 8px 16px;
+  font-size: 16px;
+  border: solid 2px var(--primary-black-color);
+  border-radius: 16px;
+}
+
   #quote-background-flex{
     display: flex;
     justify-content: center;
@@ -99,16 +96,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
   }
-  
-  .button {
-      background-color: var(--secondary-gray-color);
-      color: var(--primary-black-color);
-      padding: 8px 16px;
-      font-size: 16px;
-      border: solid 2px var(--primary-black-color);
-      border-radius: 16px;
-    }
-    
+      
     .button:hover{
       background-color: var(--secondary-color);
     }
