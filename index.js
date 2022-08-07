@@ -1,5 +1,27 @@
-// crete pseudo Quote Array 
-                
+// create pseudo Quote Array 
+ let quotes = [
+        "The way to get started is to quit talking and begin doing. -Walt Disney",
+        "The journey of a thousand miles begins with one step. - Lao Tzu",
+        "That which does not kill us makes us stronger. - Friedrich Nietzsche",
+        "You must be the change you wish to see in the world. - Mahatma Gandhi",
+        "Whether you think you can or you think you can’t, you’re right. - Henry Ford",
+        "Life is like a box of chocolates. You never know what you’re going to get. - Forrest Gump",
+        "Dream big and dare to fail. - Norman Vaughan",
+        "If you judge people, you have no time to love them. - Mother Teresa",
+        "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
+        "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
+     ]           
+
+ let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
+ let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
+
+ // create function quote change 
+        // this function should randomly change the showen Quote
+        // it should also get triggert when the random button ist presst
+
+function randomQuote() {
+document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+}
 
 //------//
 // Color Change  Function  
@@ -44,6 +66,7 @@ function changeFontWeight() {
  }       
         
 
+<<<<<<< HEAD
 
 //------//
 // Alighn Text Function (Left / Center / Right)
@@ -98,3 +121,8 @@ function showSettingsMenu() {
                 settingsMenu.style.display = "none"; 
         }    
 }
+=======
+// create function random everything 
+        // this function should 
+                // randomly chose a collor and call the color function with 
+>>>>>>> 4a0f734cc1244456080f05ed123e272632df7950

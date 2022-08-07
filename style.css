@@ -20,11 +20,7 @@ a, p{
     font-weight: 400;
     text-decoration: none;
     font-size: 19px;
-}
-
-button {
-  font-family: 'Acme', sans-serif;
-  font-weight: 600;
+    color: var(--primary-black-color);
 }
 
 main{
@@ -57,20 +53,21 @@ main{
     width: 320px;
 }
 
-
-a {
-    font-family: Acme, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--primary-black-color);
-}
-
-
 /**
 /** Main **/
 /**/
- 
+
+.button {
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+  background-color: var(--secondary-gray-color);
+  color: var(--primary-black-color);
+  padding: 8px 16px;
+  font-size: 16px;
+  border: solid 2px var(--primary-black-color);
+  border-radius: 16px;
+}
+
   #quote-background-flex{
     display: flex;
     justify-content: center;
@@ -86,11 +83,15 @@ a {
   }
   
   #quote{
+<<<<<<< HEAD
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
     font-size: 50px;
     padding: 70px;
+=======
+    font-size: 32px;
+>>>>>>> 4a0f734cc1244456080f05ed123e272632df7950
   }
   
   
@@ -103,6 +104,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
   }
+<<<<<<< HEAD
   
   .button {
       background-color: var(--secondary-gray-color);
@@ -114,6 +116,10 @@ a {
     }
     
   .button:hover{
+=======
+      
+    .button:hover{
+>>>>>>> 4a0f734cc1244456080f05ed123e272632df7950
       background-color: var(--secondary-color);
     }
   
