@@ -5,7 +5,7 @@
 // Color Change  Function  
 //------//
 function colorChange(input) {
-        const collorArray = ["#cf2626", "#db9e2c", "#c0c00b", "#0e910e", "#11dfdf", "#2f32e9", "#63159b", "#8f178f", "#e27487"];
+        const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#63159b", "#8f178f", "#e27487"];
         const color = collorArray[input]             
         document.getElementById("quote-background-flex").style.backgroundColor = color;         
 }
