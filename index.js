@@ -64,10 +64,17 @@ function justifyText(input) {
 // Randomise all function
 //------//
 function randomiseAll() {
-        const randomNumber = '##';
-        
+        const randomNumber = function() {
+             return Math.random(); 
+        }
 
+        //random Color//
+        const randomColor = Math.floor(randomNumber * 18);   
+        colorChange(randomColor); 
 
+        //random Alighment//
+        const randomAlighment = Math.floor(randomNumber * 3);
+        justifyText(randomAlighment); 
 
 }
  
