@@ -15,31 +15,14 @@
  let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
  let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
 
- //document.getElementById("new-quote").addEventListener("click", randomQuote);
- document.getElementById("new-quote").onclick = function() {randomQuote()};
- function randomQuote() {
-    document.getElementById("quote").innerHTML = `${firstQuote}`;  
-        console.log(document.getElementById("quote").innerHTML);
-}
-
-randomQuote();
-//randomQuote = (quotes) => displayQuote;
-
- //function randomQuote(quotes) {
-  //return items[Math.floor(Math.random() * quotes.length)];}
-
-// create function quote change 
+ // create function quote change 
         // this function should randomly change the showen Quote
         // it should also get triggert when the random button ist presst
-        //
 
-//console.log(randomQuote(quotes));
+function randomQuote() {
+document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+}
 
-//const buttonNewQuote = document.getElementById("new-quote");
-//buttonNewQuote.addEventListener("click", randomQuote);
-
- // const buttonRandom = document.getElementById("random");
-// buttonSubtract.addEventListener("click", subtract);
 
 // create function color change
         // this function should take 1 parameter (witch is either the choosen collor or a random collor)
