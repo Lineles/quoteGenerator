@@ -75,7 +75,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: var(--primary-background-color);
+    background-color: #ED6661;
     margin: 10px 0px;
     border: solid 2px var(--primary-black-color);
     border-radius: 40px;
