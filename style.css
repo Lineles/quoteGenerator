@@ -12,7 +12,7 @@
   }
 
 body{ 
-    background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
 }
 
 a, p{
@@ -25,6 +25,7 @@ a, p{
 button {
   font-family: 'Acme', sans-serif;
   font-weight: 600;
+  font-size: 26px;
 }
 
 main{
@@ -97,7 +98,19 @@ a {
   /**
   /** Section **/
   /**/
-  
+  .underlined{
+    text-decoration: underline;
+  } 
+
+  .italic{
+    font-style: italic;
+  }
+
+  .bold{
+    font-weight: bolder;
+  }
+
+
   .section-flex{
     display: flex;
     justify-content: space-evenly;
@@ -122,7 +135,7 @@ a {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 60px;
     }
 
     .settings-structure-flex{
@@ -146,7 +159,11 @@ a {
        /* color: var(--primary-white-color); */
     }
   
-    
+    .setings-heading{
+      font-family: 'Cormorant Garamond', serif;
+      text-decoration: underline;
+    }
+
     .dropdown:hover .dropdown-content {
       border-radius: 8px;
       display: flex;
@@ -171,6 +188,7 @@ a {
       align-items: center;
       gap: 5px;
     }
+
     .settings-item{
       width: 55px;
       height: 55px;
@@ -178,6 +196,7 @@ a {
       background-color: var(--secondary-gray-color);
       border-radius: 8px;
     }
+
     .settings-item:hover{
       width: 55px;
       height: 55px;
