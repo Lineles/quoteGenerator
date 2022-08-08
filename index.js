@@ -31,7 +31,18 @@ function colorChange(input) {
         const color = collorArray[input]             
         document.getElementById("quote-background-flex").style.backgroundColor = color;         
 }
-       
+
+
+
+//------//
+// Color Change  Function  
+//------//
+function fontColorChange(input) {
+        const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
+        const color = collorArray[input]             
+        document.getElementById("quote").style.color = color;
+}
+
 
 //------//
 // Text Style Change Function`s     
@@ -93,6 +104,10 @@ function randomiseAll() {
         const randomColor = Math.floor(randomNumber * 18);   
         colorChange(randomColor); 
 
+        //random Font Color//
+        const randomFontColor = Math.floor(randomNumber * 18);   
+        fontColorChange(randomFontColor); 
+
         //random Alighment//
         const randomAlighment = Math.floor(randomNumber * 3);
         justifyText(randomAlighment); 
@@ -103,20 +118,17 @@ function randomiseAll() {
                 changeTextDecoration();
         }
 
-
         // random Font Style  
         const randomStyle = Math.floor(randomNumber * 6);
         if (randomStyle <= 3) {
                 changeFontStyle(); 
         }
 
-
         // random Font Weight
         const randomWeight = Math.floor(randomNumber * 10);
         if (randomWeight <= 5) {
                 changeFontWeight();
         }
-
 }
 
 
