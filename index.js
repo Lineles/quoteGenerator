@@ -73,6 +73,27 @@ function randomiseAll() {
         //random Alighment//
         const randomAlighment = Math.floor(randomNumber * 3);
         justifyText(randomAlighment); 
+
+        // random Text Decoration  
+        const randomUnderline = Math.floor(randomNumber * 20);
+        if (randomUnderline <= 10){
+                changeTextDecoration();
+        }
+
+
+        // random Font Style  
+        const randomStyle = Math.floor(randomNumber * 6);
+        if (randomStyle <= 3) {
+                changeFontStyle(); 
+        }
+
+
+        // random Font Weight
+        const randomWeight = Math.floor(randomNumber * 10);
+        if (randomWeight <= 5) {
+                changeFontWeight();
+        }
+
 }
 
 
@@ -86,8 +107,9 @@ function giveRandomNumber() {
 
 
 
-
+//------//
 // Open & Close Setings Menu 
+//------//
 const settingsMenu = document.getElementById("settings"); 
 
 function showSettingsMenu() {
