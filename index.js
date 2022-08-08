@@ -131,6 +131,10 @@ function randomiseAll() {
         if (randomWeight <= 5) {
                 changeFontWeight();
         }
+
+        // random Font Size
+        const randomSize = Math.floor(randomNumber * 3);
+        changesize(randomSize);
 }
 
 //------//
