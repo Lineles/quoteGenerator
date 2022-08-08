@@ -100,40 +100,39 @@ function changesize(input) {
 // Randomise all function
 //------//
 function randomiseAll() {
-        const randomNumber = giveRandomNumber();
 
         //random Color//
-        const randomColor = Math.floor(randomNumber * 18);   
+        const randomColor = Math.floor(giveRandomNumber() * 18);   
         colorChange(randomColor); 
 
         //random Font Color//
-        const randomFontColor = Math.floor(randomNumber * 18);   
+        const randomFontColor = Math.floor(giveRandomNumber() * 18);   
         fontColorChange(randomFontColor); 
 
         //random Alighment//
-        const randomAlighment = Math.floor(randomNumber * 3);
+        const randomAlighment = Math.floor(giveRandomNumber() * 3);
         justifyText(randomAlighment); 
 
         // random Text Decoration  
-        const randomUnderline = Math.floor(randomNumber * 20);
+        const randomUnderline = Math.floor(giveRandomNumber() * 20);
         if (randomUnderline <= 10){
                 changeTextDecoration();
         }
 
         // random Font Style  
-        const randomStyle = Math.floor(randomNumber * 6);
+        const randomStyle = Math.floor(giveRandomNumber() * 6);
         if (randomStyle <= 3) {
                 changeFontStyle(); 
         }
 
         // random Font Weight
-        const randomWeight = Math.floor(randomNumber * 10);
+        const randomWeight = Math.floor(giveRandomNumber() * 10);
         if (randomWeight <= 5) {
                 changeFontWeight();
         }
 
         // random Font Size
-        const randomSize = Math.floor(randomNumber * 3);
+        const randomSize = Math.floor(giveRandomNumber() * 3);
         changesize(randomSize);
 }
 
