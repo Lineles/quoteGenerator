@@ -16,7 +16,7 @@ function colorChange(input) {
 // Color Change  Function  
 //------//
 function fontColorChange(input) {
-        const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
+        const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "", "", "", "", "", "", "", "", "", "", "", ""];
         const color = collorArray[input]             
         document.getElementById("quote").style.color = color;
 }
