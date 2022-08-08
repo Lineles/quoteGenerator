@@ -1,4 +1,6 @@
-// create pseudo Quote Array 
+//------//
+// Pseudo Array  
+//------//
  let quotes = [
         "The way to get started is to quit talking and begin doing. - Walt Disney",
         "The journey of a thousand miles begins with one step. - Lao Tzu",
@@ -15,10 +17,9 @@
  let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
  let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
 
- // create function quote change 
-        // this function should randomly change the showen Quote
-        // it should also get triggert when the random button ist presst
-
+//------//
+// Quote Change Function  
+//------//
 function randomQuote() {
 document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
 }
@@ -32,10 +33,8 @@ function colorChange(input) {
         document.getElementById("quote-background-flex").style.backgroundColor = color;         
 }
 
-
-
 //------//
-// Color Change  Function  
+// Font Color Change  Function  
 //------//
 function fontColorChange(input) {
         const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
@@ -43,9 +42,8 @@ function fontColorChange(input) {
         document.getElementById("quote").style.color = color;
 }
 
-
 //------//
-// Text Style Change Function`s     
+// Text Style Change Function    
 //------//
 const quote = document.getElementById("quote");
 // Change Font Weight Function   
@@ -76,9 +74,6 @@ function changeFontWeight() {
         }    
  }       
         
-
-
-
 //------//
 // Alighn Text Function (Left / Center / Right)
 //------//
@@ -87,12 +82,19 @@ function justifyText(input) {
         const alighment = alighments[input];
         document.getElementById("quote-background-flex").style.justifyContent = alighment;
 }
-        
 
-// create function quote change 
-        // this function should randomly change the showen Quote
-        // it should also get triggert when the random button ist presst
-        
+//------//
+// Font Size Change  Function  
+//------//
+function changesize(input) {
+        const fontsize = ["24px", "32px", "40px"]
+        const size = fontsize[input];
+        document.getElementById("quote").style.fontSize = size;
+}
+
+
+
+
 
 //------//
 // Randomise all function
@@ -129,8 +131,11 @@ function randomiseAll() {
         if (randomWeight <= 5) {
                 changeFontWeight();
         }
-}
 
+        // random Font Size
+        const randomSize = Math.floor(randomNumber * 3);
+        changesize(randomSize);
+}
 
 //------//
 // Give Random Number
@@ -138,9 +143,6 @@ function randomiseAll() {
 function giveRandomNumber() {
         return Math.random();
 }
-
-
-
 
 //------//
 // Open & Close Setings Menu 
@@ -155,8 +157,3 @@ function showSettingsMenu() {
                 settingsMenu.style.display = "none"; 
         }    
 }
-
-// create function random everything 
-        // this function should 
-                // randomly chose a collor and call the color function with 
-
