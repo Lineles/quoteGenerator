@@ -112,7 +112,7 @@ button {
     }
   
     .settings-flex{
-      display: flex; /**(important for index.js)**/
+      display: none; /**(important for index.js)**/
       flex-direction: row;
       justify-content: center;
       align-items: center;
