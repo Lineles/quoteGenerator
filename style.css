@@ -159,24 +159,9 @@ a {
       gap: 5px;
     }
     
-    .dropdown-content .drop-item:hover {
-      border: solid 1px var(--primary-color);
-      border-radius: 8px;
-       /* color: var(--primary-white-color); */
-    }
-  
     .setings-heading{
       font-family: 'Cormorant Garamond', serif;
       text-decoration: underline;
-    }
-
-    .dropdown:hover .dropdown-content {
-      border-radius: 8px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
     }
 
     .color-change-masterflex{
@@ -210,6 +195,8 @@ a {
       border-radius: 8px;
     }
   
+
+
   /**
   /** Aspect Ratio Buttons **/
   /**/
