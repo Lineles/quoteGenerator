@@ -71,17 +71,23 @@ a {
 /**
 /** Main **/
 /**/
+.quote-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   #quote-background-flex{
     display: flex;
     justify-content: center;
     align-items: center; 
     background-color: #ED6661;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     border: solid 2px var(--primary-black-color);
     border-radius: 40px;
     padding: 36px 0;
-    height: 520px;
+    height: 400px;
+    width: 1350px;
     margin-left: 80px;
     margin-right: 80px;
   }
@@ -204,6 +210,35 @@ a {
       border-radius: 8px;
     }
   
+  /**
+  /** Aspect Ratio Buttons **/
+  /**/
+.aspect-ratio-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aspect-ratio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.ratio-item{
+      height: 55px;
+      border: solid 2px black;
+      background-color: var(--secondary-gray-color);
+      border-radius: 8px;
+}
+
+.ratio-item:hover{
+  border: solid 4px green;
+}
+
   /**
   /** Settings Menu Buttons **/
   /**/

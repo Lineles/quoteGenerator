@@ -92,10 +92,6 @@ function changesize(input) {
         document.getElementById("quote").style.fontSize = size;
 }
 
-
-
-
-
 //------//
 // Randomise all function
 //------//
@@ -155,4 +151,43 @@ function showSettingsMenu() {
         } else {
                 settingsMenu.style.display = "none"; 
         }    
+}
+
+
+//------//
+// Open & Close Ratio Menu 
+//------//
+const ratioMenu = document.getElementById("ratio"); 
+
+function aspectRatio() {
+        const checkRatioStatus = ratioMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                ratioMenu.style.display = "flex"; 
+        } else {
+                ratioMenu.style.display = "none"; 
+        }    
+}
+
+//------//
+// Change Ratio Function
+//------//
+const ratio = document.getElementById("quote-background-flex");
+
+function changeRatio(input) {
+        if (input == 1) {
+              ratio.style.height = "405px";
+              ratio.style.width = "720px";
+        } 
+        if (input == 2) {
+                ratio.style.height = "720px";
+                ratio.style.width = "720px";
+        } 
+        if (input == 3) {
+                ratio.style.height = "720px";
+                ratio.style.width = "405px";
+        } 
+        if (input == 4) {
+                ratio.style.height = "400px";
+                ratio.style.width = "1350px";
+        }     
 }
