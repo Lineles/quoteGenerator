@@ -26,12 +26,12 @@
     </nav>
 
     <main>
-        <div id="quote-background-flex">
+        <div class="quote-flex">
+            <div id="quote-background-flex">
+            
+                <p id="quote"></p>
 
-
-        <p id="quote"></p>
-
-
+            </div>
         </div>
     </main>
 
@@ -144,9 +144,10 @@
         <div class="aspect-ratio-menu" id="ratio">
             <h2 class="setings-heading">Ratio for:</h2>
             <div class="aspect-ratio">   
-                <button onclick="" class="ratio-item">Facebook</button>
-                <button onclick="" class="ratio-item">Instagram</button>
-                <button onclick="" class="ratio-item">TikTok</button>
+                <button onclick="changeRatio(1)" class="ratio-item">Facebook</button>
+                <button onclick="changeRatio(2)" class="ratio-item">Instagram</button>
+                <button onclick="changeRatio(3)" class="ratio-item">TikTok</button>
+                <button onclick="changeRatio(4)" class="ratio-item">Default</button>
             </div> 
         </div>     
 
