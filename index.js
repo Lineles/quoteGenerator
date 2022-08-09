@@ -156,3 +156,18 @@ function showSettingsMenu() {
                 settingsMenu.style.display = "none"; 
         }    
 }
+
+
+//------//
+// Open & Close Ratio Menu 
+//------//
+const ratioMenu = document.getElementById("ratio"); 
+
+function aspectRatio() {
+        const checkRatioStatus = ratioMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                ratioMenu.style.display = "flex"; 
+        } else {
+                ratioMenu.style.display = "none"; 
+        }    
+}
