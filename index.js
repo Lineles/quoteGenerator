@@ -179,8 +179,8 @@ function changeRatio(input) {
               ratio.style.width = "720px";
         } 
         if (input == 2) {
-                ratio.style.height = "720px";
-                ratio.style.width = "720px";
+                ratio.style.height = "405px";
+                ratio.style.width = "405px";
         } 
         if (input == 3) {
                 ratio.style.height = "720px";
