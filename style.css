@@ -29,8 +29,11 @@ button {
   font-size: 26px;
 }
 
-/** Navbar **/
 
+
+/**/
+/** Navbar **/
+/**/
 .navbar {
     display: flex;
     flex-direction: row;
@@ -56,7 +59,8 @@ button {
 }
 
 
-/**
+
+/**/
 /** Main **/
 /**/
 .quote-flex{
@@ -88,8 +92,9 @@ button {
     padding: 80px;
   }
   
+
   
-  /**
+  /**/
   /** Section **/
   /**/
   .section-flex{
@@ -172,7 +177,7 @@ button {
   
 
 
-  /**
+  /**/
   /** Aspect Ratio Buttons  **/
   /**/
 .aspect-ratio-menu{
@@ -202,7 +207,7 @@ button {
 }
 
 
-  /**
+  /**/
   /** Text Editing Style Buttons (important for index.js) **/
   /**/
   .underlined{
