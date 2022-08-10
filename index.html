@@ -40,18 +40,18 @@
         <div class="section-flex">
             <button type="submit" class="button" onclick="showSettingsMenu()">Settings</button> <!-- Important for index.js -->
             
-            <button type="submit" class="button" onclick="randomiseAll()">Random</button>       <!-- Important for index.js -->
-
             <button class="button" id="new-quote" onclick="randomQuote()">New Quote</button>    <!-- Important for index.js -->
+           
+            <button type="submit" class="button" onclick="randomiseAll()">Random Style</button>       <!-- Important for index.js -->
             
             <button type="submit" class="button" onclick="aspectRatio()">Ratio</button>         <!-- Important for index.js -->
         </div>  
         
         
-        <div class="settings-flex" id="settings">
-            <div class="settings-structure-flex">
+        <div class="settings-menu" id="settings">
+            <div class="settings-sections-flex">
                 <h2 class="setings-heading">Change Fontcolor:</h2>
-                <div class="color-change-masterflex">
+                <div class="change-card-flex">
                     <p>Black To White Color Scheme:</p>
                     <div class="color-change-flex">
                         <button type="submit" class="settings-item Rich-Black" onclick="fontColorChange(0)"> . </button>            <!-- Important for index.js -->
@@ -81,25 +81,21 @@
                     </div>
                 </div>
             </div>
-            <div class="settings-structure-flex">
+            <div class="settings-sections-flex">
                 <h2 class="setings-heading"> Text Editing: </h2>
-                    <div class="color-change-masterflex">
+                    <div class="change-card-flex">
                         <p>Alighment:</p>
                         <div class="text-editing-flex">
                             <button type="submit" class="settings-item" onclick="justifyText(0)"><img src="img\left-alighn.jpg" alt="left-alighnt" height="40px"></button>      <!-- Important for index.js -->
                             <button type="submit" class="settings-item" onclick="justifyText(1)"><img src="img\center-alighn.jpg" alt="center-alighnt" height="40px"> </button> <!-- Important for index.js -->
                             <button type="submit" class="settings-item" onclick="justifyText(2)"><img src="img\right-alighn.jpg" alt="right-alighnt" height="40px"> </button>   <!-- Important for index.js -->      
                         </div>
-                    </div>    
-                    <div class="color-change-masterflex">
                         <p>Style:</p>
                         <div class="text-editing-flex">    
                             <button type="submit" class="settings-item bold" onclick="changeFontWeight()"> B </button>              <!-- Important for index.js -->
                             <button type="submit" class="settings-item italic" onclick="changeFontStyle()"> I </button>             <!-- Important for index.js -->
                             <button type="submit" class="settings-item underlined" onclick="changeTextDecoration()"> U </button>    <!-- Important for index.js -->
                         </div>
-                    </div>
-                    <div class="color-change-masterflex">
                         <p>Size:</p>
                         <div class="text-editing-flex">    
                             <button type="submit" class="settings-item" onclick="changesize(0)"> S </button>        <!-- Important for index.js -->
@@ -108,9 +104,9 @@
                         </div>
                     </div>        
             </div>
-            <div class="settings-structure-flex">
+            <div class="settings-sections-flex">
                 <h2 class="setings-heading">Change Background:</h2>
-                <div class="color-change-masterflex">
+                <div class="change-card-flex">
                     <p>All In Meditation Color Scheme:</p>
                     <div class="color-change-flex">
                         <button type="submit" class="settings-item Light-Salmon-Pink" onclick="colorChange(0)"> . </button>     <!-- Important for index.js -->
@@ -141,6 +137,9 @@
                 </div>
             </div>
         </div>
+
+        
+       
     
         <div class="aspect-ratio-menu" id="ratio">
             <h2 class="setings-heading">Ratio for:</h2>
@@ -160,12 +159,12 @@
 
     <div class="footer">
         <footer>
-            <a href=""><img class="footer-image" src="img\facebook.png" alt=""></a>
-            <a href=""><img class="footer-image" src="img\twitter.png" alt=""></a>
-            <a href=""><img class="footer-image" src="img\instagram.png" alt=""></a>
-            <a href=""><img class="footer-image" src="img\tiktok.png" alt=""></a>
-            <a href=""><img class="footer-image" src="img\snapchat.png" alt=""></a>
-            <a href=""><img class="footer-image" src="img\github.png" alt=""></a>
+            <a href="https://www.facebook.com/login/"><img class="footer-image" src="img\facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/i/flow/login"><img class="footer-image" src="img\twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img class="footer-image" src="img\instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/login"><img class="footer-image" src="img\tiktok.png" alt="TikTok"></a>
+            <a href="https://www.snapchat.com/de-DE"><img class="footer-image" src="img\snapchat.png" alt="SnapChat"></a>
+            <a href="https://github.com/"><img class="footer-image" src="img\github.png" alt="GitHub"></a>
         </footer>
     </div>
 
