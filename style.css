@@ -116,19 +116,26 @@ button {
       background-color: var(--secondary-color);
     }
   
-    .settings-flex{
+
+
+  /**/
+  /** Settings Structur **/
+  /**/
+    .settings-menu{
       display: none; /**(important for index.js)**/
       flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 60px;
+      /* border: solid black 1px; */        /**(here you can see witch part it is!)* */
     }
 
-    .settings-structure-flex{
+    .settings-sections-flex{
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
+      /* border: solid black 1px; */        /**(here you can see witch part it is!)* */
     }
 
     .text-editing-flex{
@@ -137,6 +144,7 @@ button {
       justify-content: center;
       align-items: center;
       gap: 5px;
+      /* border: solid black 1px; */        /**(here you can see witch part it is!)* */
     }
     
     .setings-heading{
@@ -144,12 +152,13 @@ button {
       text-decoration: underline;
     }
 
-    .color-change-masterflex{
+    .change-card-flex{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 5px;
+      /* border: solid black 1px; */        /**(here you can see witch part it is!)* */
     }
 
     .color-change-flex{
@@ -158,6 +167,7 @@ button {
       justify-content: center;
       align-items: center;
       gap: 5px;
+      /* border: solid black 1px; */        /**(here you can see witch part it is!)**/
     }
 
     .settings-item{
