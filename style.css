@@ -71,26 +71,38 @@ button {
 }
 
   #quote-background-flex{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center; 
     background-color: #ED6661;
     margin-bottom: 10px;
     border: solid 2px var(--primary-black-color);
     border-radius: 40px;
-    padding: 36px 0;
+    padding: 36px 0; */
     height: 400px; /**(important for index.js)**/
     width: 1350px; /**(important for index.js)**/
-    margin-left: 80px;
-    margin-right: 80px;
+    /* margin-left: 80px;
+    margin-right: 80px;  */
+    position: relative;
+    margin-top: 100px;
+    background-color: aqua;
+    border: solid black 2px;
+    border-radius: 24px;
   }
   
   #quote{
+          display: block;
+          width: 500px;
+          height: 150px;
+          border: solid black 2px;
+          position: absolute;
+          top: 0;
+          left: 0;
     font-style: normal; /**(important for index.js)**/
     font-weight: normal; /**(important for index.js)**/
     text-decoration: none; /**(important for index.js)**/
     font-size: 32px; /**(important for index.js)**/
-    padding: 80px;
+    /* padding: 80px; */
   }
   
 

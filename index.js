@@ -191,3 +191,27 @@ function changeRatio(input) {
                 ratio.style.width = "1350px";
         }     
 }
+
+//------//
+// Quote Position Function  
+//------//
+
+function xAxis(){
+        const x = document.getElementById("left-right").value;
+            const image = document.getElementById("quote").style;
+            image.left = x +"px";
+    
+        const boxWith = document.getElementById("quote-background-flex").style.width;
+        const range = document.getElementById("left-right");
+    
+        xRrange.max = (boxWith  )+ "px" ;
+    
+    }
+    
+    function yAxis(){
+        const x = document.getElementById("up-Down").value;
+            const image = document.getElementById("quote").style;
+            image.top = x +"px";
+    
+    ;
+    }
