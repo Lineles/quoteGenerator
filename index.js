@@ -182,6 +182,19 @@ function positionMenu() {
         }    
 }
 
+const posiInput = document.getElementById("activate-posi");
+function activatePosi() {
+        const button = document.getElementById("actvataButton");
+        const activate = posiInput.style.display; 
+        if (activate === "none") {
+                posiInput.style.display = "flex"; 
+                button.innerHTML = "Deaktivate";
+        } else {
+                posiInput.style.display = "none";
+                button.innerHTML = "Activate" ;
+        }    
+}
+
 //------//
 // Change Ratio Function
 //------//

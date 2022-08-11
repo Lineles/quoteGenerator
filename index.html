@@ -143,8 +143,9 @@
         <div class="position-menu" id="posi">
             <h2 class="setings-heading">Position:</h2>
             <p class="beta-info">The Position is in Beta Test, you can try it, but there are some bugs at this point!</p>
-            <form id="input">
-                <div class="posi-input">   
+            <button onclick="activatePosi()" class="ratio-item" id="actvataButton">Activate</button>
+            <form id="input" >
+                <div class="posi-input" id="activate-posi">   
                     <div>
                          <p> X Axis:</p>
                          <input type="range" class="range-Input" name="left-right" id="left-right" step="1" value="0" min="-90" max="90"  onChange="xAxis()" placeholder="left-right"/>
