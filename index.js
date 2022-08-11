@@ -192,6 +192,8 @@ function changeRatio(input) {
         if (input == 1) {
               ratio.style.height = "405px";
               ratio.style.width = "720px";
+              quoteBox.style.width = "220px";
+              quoteBox.style.height = "220px";
         } 
         if (input == 2) {
                 ratio.style.height = "405px";

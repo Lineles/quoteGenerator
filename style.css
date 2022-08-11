@@ -246,9 +246,6 @@ button {
 .range-Input{
   width: 200px;
 }
-/**/
-/** Position Input (important for index.js) **/
-/**/
 
 
   /**/
@@ -278,4 +275,12 @@ button {
   .footer-image {
    height: 40px;
    margin: 8px;
+  }
+
+  .beta-info{
+    color: black;
+    font-weight: 900;
+    border: solid red 2px;
+    padding: 16px;
+    background-color: #ED6661;
   }
