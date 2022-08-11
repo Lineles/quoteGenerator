@@ -78,9 +78,9 @@ function changeFontWeight() {
 // Alighn Text Function (Left / Center / Right)
 //------//
 function justifyText(input) {
-        const alighments = ["flex-start", "center", "flex-end"]
+        const alighments = ["left", "center", "right"]
         const alighment = alighments[input];
-        document.getElementById("quote-background-flex").style.justifyContent = alighment;
+        quote.style.textAlign = alighment;
 }
 
 //------//
@@ -172,6 +172,7 @@ function aspectRatio() {
 // Change Ratio Function
 //------//
 const ratio = document.getElementById("quote-background-flex");
+const quoteBox = document.getElementById("quote");
 
 function changeRatio(input) {
         if (input == 1) {
@@ -181,37 +182,35 @@ function changeRatio(input) {
         if (input == 2) {
                 ratio.style.height = "405px";
                 ratio.style.width = "405px";
+                quoteBox.style.width = "220px";
+                quoteBox.style.height = "220px";
         } 
         if (input == 3) {
                 ratio.style.height = "720px";
                 ratio.style.width = "405px";
+                quoteBox.style.width = "230px";
+                quoteBox.style.height = "220px";
         } 
         if (input == 4) {
                 ratio.style.height = "400px";
                 ratio.style.width = "1350px";
+                quoteBox.style.width = "1000px";
+                quoteBox.style.height = "200px";
         }     
 }
 
 //------//
 // Quote Position Function  
 //------//
-
+ 
 function xAxis(){
         const x = document.getElementById("left-right").value;
-            const image = document.getElementById("quote").style;
-            image.left = x +"px";
+        const image = document.getElementById("quote").style; 
+        image.left = x +"px";  
+}
     
-        const boxWith = document.getElementById("quote-background-flex").style.width;
-        const range = document.getElementById("left-right");
-    
-        xRrange.max = (boxWith  )+ "px" ;
-    
-    }
-    
-    function yAxis(){
-        const x = document.getElementById("up-Down").value;
-            const image = document.getElementById("quote").style;
-            image.top = x +"px";
-    
-    ;
-    }
+function yAxis(){
+        const y = document.getElementById("up-Down").value;
+        const image = document.getElementById("quote").style;
+        image.top = y +"px";
+}

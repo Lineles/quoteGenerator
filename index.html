@@ -14,7 +14,7 @@
     
 </head>
     
-<body>
+<body onload="CreatPosition ()">
 
     <nav class="navbar">
         <h1 class="title">Quote Generator</h1>
@@ -140,8 +140,8 @@
 
         <div>
             <form id="input">
-                <input type="range" name="left-right" id="left-right" step="1" value="0" min="0" max="300"  onChange="xAxis()" style="width:200px;" placeholder="left-right"/>
-                <input type="range" name="up-Down" id="up-Down" step="1" value="0" min="0" max="180"  onChange="yAxis()" style="width:200px;" placeholder="up-Down"/>
+                <input type="range" class="range-Input" name="left-right" id="left-right" step="1" value="0" min="-90" max="90"  onChange="xAxis()" placeholder="left-right"/>
+                <input type="range" class="range-Input" name="up-Down" id="up-Down" step="1" value="0" min="-100" max="100"  onChange="yAxis()" placeholder="up-Down"/>
             </form>
         </div>
     
