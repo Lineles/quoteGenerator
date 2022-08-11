@@ -192,6 +192,8 @@ function activatePosi() {
         } else {
                 posiInput.style.display = "none";
                 button.innerHTML = "Activate" ;
+                quote.style.top = 0;
+                quote.style.left = 0;
         }    
 }
 
