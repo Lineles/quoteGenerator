@@ -187,31 +187,37 @@ function positionMenu() {
 //------//
 const ratio = document.getElementById("quote-background-flex");
 const quoteBox = document.getElementById("quote");
+const quoteFontSize = document.getElementById("quote").style.fontSize;
+
 
 function changeRatio(input) {
         if (input == 1) {
               ratio.style.height = "405px";
               ratio.style.width = "720px";
-              quoteBox.style.width = "220px";
-              quoteBox.style.height = "220px";
+              quoteBox.style.width = "500px";
+              quoteBox.style.height = "200px";
+              changesize(1);
         } 
         if (input == 2) {
                 ratio.style.height = "405px";
                 ratio.style.width = "405px";
-                quoteBox.style.width = "220px";
-                quoteBox.style.height = "220px";
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "200px";
+                changesize(0);
         } 
         if (input == 3) {
                 ratio.style.height = "720px";
                 ratio.style.width = "405px";
-                quoteBox.style.width = "230px";
-                quoteBox.style.height = "220px";
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "500px";
+                changesize(1);
         } 
         if (input == 4) {
-                ratio.style.height = "400px";
+                ratio.style.height = "405px";
                 ratio.style.width = "1350px";
-                quoteBox.style.width = "1000px";
-                quoteBox.style.height = "100px";
+                quoteBox.style.width = "800px";
+                quoteBox.style.height = "150px";
+                changesize(2);
         }     
 }
 
