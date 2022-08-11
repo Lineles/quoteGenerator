@@ -40,11 +40,13 @@
         <div class="section-flex">
             <button type="submit" class="button" onclick="showSettingsMenu()">Settings</button> <!-- Important for index.js -->
             
-            <button class="button" id="new-quote" onclick="randomQuote()">New Quote</button>    <!-- Important for index.js -->
-           
             <button type="submit" class="button" onclick="randomiseAll()">Random Style</button>       <!-- Important for index.js -->
             
+            <button class="button" id="new-quote" onclick="randomQuote()">New Quote</button>    <!-- Important for index.js -->
+            
             <button type="submit" class="button" onclick="aspectRatio()">Ratio</button>         <!-- Important for index.js -->
+            
+            <button type="submit" class="button" onclick="positionMenu()">Position</button>         <!-- Important for index.js -->
         </div>  
         
         
@@ -138,10 +140,19 @@
             </div>
         </div>
 
-        <div>
+        <div class="position-menu" id="posi">
+            <h2 class="setings-heading">Position:</h2>
             <form id="input">
-                <input type="range" class="range-Input" name="left-right" id="left-right" step="1" value="0" min="-90" max="90"  onChange="xAxis()" placeholder="left-right"/>
-                <input type="range" class="range-Input" name="up-Down" id="up-Down" step="1" value="0" min="-100" max="100"  onChange="yAxis()" placeholder="up-Down"/>
+                <div class="posi-input">   
+                    <div>
+                         <p> X Axis:</p>
+                         <input type="range" class="range-Input" name="left-right" id="left-right" step="1" value="0" min="-90" max="90"  onChange="xAxis()" placeholder="left-right"/>
+                    </div>
+                    <div>
+                         <p> Y Axis:</p> 
+                         <input type="range" class="range-Input" name="up-Down" id="up-Down" step="1" value="0" min="-100" max="100"  onChange="yAxis()" placeholder="up-Down"/>
+                    </div>
+                </div> 
             </form>
         </div>
     

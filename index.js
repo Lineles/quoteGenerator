@@ -169,6 +169,20 @@ function aspectRatio() {
 }
 
 //------//
+// Open & Close Ratio Menu 
+//------//
+const posiMenu = document.getElementById("posi"); 
+
+function positionMenu() {
+        const checkRatioStatus = posiMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                posiMenu.style.display = "flex"; 
+        } else {
+                posiMenu.style.display = "none"; 
+        }    
+}
+
+//------//
 // Change Ratio Function
 //------//
 const ratio = document.getElementById("quote-background-flex");
@@ -195,7 +209,7 @@ function changeRatio(input) {
                 ratio.style.height = "400px";
                 ratio.style.width = "1350px";
                 quoteBox.style.width = "1000px";
-                quoteBox.style.height = "200px";
+                quoteBox.style.height = "100px";
         }     
 }
 
