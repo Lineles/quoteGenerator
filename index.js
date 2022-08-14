@@ -2,7 +2,7 @@
 // CONST (Do not Change) 
 //------//
 const quote = document.getElementById("quote");
-
+const quoteBackgroung = document.getElementById("quote-background-flex");
 
 
 
@@ -41,7 +41,7 @@ document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * q
 function colorChange(input) {
         const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
         const color = collorArray[input]             
-        document.getElementById("quote-background-flex").style.backgroundColor = color;         
+        quoteBackgroung.style.backgroundColor = color;         
 }
 
 //------//
@@ -215,36 +215,32 @@ function activatePosi() {
 //------//
 // Change Ratio Function
 //------//
-const ratio = document.getElementById("quote-background-flex");
-// const quoteBox = document.getElementById("quote");
-const quoteFontSize = document.getElementById("quote").style.fontSize;
-
 
 function changeRatio(input) {
         if (input == 1) {
-              ratio.style.height = "405px";
-              ratio.style.width = "720px";
+                quoteBackgroung.style.height = "405px";
+                quoteBackgroung.style.width = "720px";
               quote.style.width = "500px";
               quote.style.height = "200px";
               changesize(1);
         } 
         if (input == 2) {
-                ratio.style.height = "405px";
-                ratio.style.width = "405px";
+                quoteBackgroung.style.height = "405px";
+                quoteBackgroung.style.width = "405px";
                 quote.style.width = "200px";
                 quote.style.height = "200px";
                 changesize(0);
         } 
         if (input == 3) {
-                ratio.style.height = "720px";
-                ratio.style.width = "405px";
+                quoteBackgroung.style.height = "720px";
+                quoteBackgroung.style.width = "405px";
                 quote.style.width = "200px";
                 quote.style.height = "500px";
                 changesize(1);
         } 
         if (input == 4) {
-                ratio.style.height = "405px";
-                ratio.style.width = "1350px";
+                quoteBackgroung.style.height = "405px";
+                quoteBackgroung.style.width = "1350px";
                 quote.style.width = "800px";
                 quote.style.height = "150px";
                 changesize(2);
