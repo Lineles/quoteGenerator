@@ -5,6 +5,7 @@ const quote = document.getElementById("quote");
 const quoteBackgroung = document.getElementById("quote-background-flex");
 const settingsMenu = document.getElementById("settings"); 
 const ratioMenu = document.getElementById("ratio"); 
+const posiMenu = document.getElementById("posi"); 
 
 
 
@@ -154,7 +155,6 @@ function giveRandomNumber() {
 
 
 // Open & Close Setings Menu 
-
 function showSettingsMenu() {
         const checkSettingsStatus = settingsMenu.style.display; 
         if (checkSettingsStatus === "none") {
@@ -180,7 +180,6 @@ function aspectRatio() {
 //------//
 // Open & Close Ratio Menu 
 //------//
-const posiMenu = document.getElementById("posi"); 
 
 function positionMenu() {
         const checkRatioStatus = posiMenu.style.display; 
