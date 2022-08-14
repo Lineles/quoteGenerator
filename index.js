@@ -1,6 +1,7 @@
 //------//
-// CONST (Do not Change) 
-//------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// CONST (!!! Do not Change !!!) 
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
 const quote = document.getElementById("quote");
 const quoteBackgroung = document.getElementById("quote-background-flex");
 const settingsMenu = document.getElementById("settings"); 
@@ -39,27 +40,135 @@ const posiInput = document.getElementById("activate-posi");
          document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
         }
         
-        //------//
-        // Color Change  Function  
-        //------//
-        function colorChange(input) {
-                const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
-                const color = collorArray[input]             
-                quoteBackgroung.style.backgroundColor = color;         
-        }
-        
-        //------//
-        // Font Color Change  Function  
-        //------//
-        function fontColorChange(input) {
-                const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
-                const color = collorArray[input]             
-                quote.style.color = color;
-        }
-        
-        //------//
-        // Text Style Change Function    
+
 //------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// Randomise Function`s
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Give Random Number
+function giveRandomNumber() {
+        return Math.random();
+}
+
+// Randomise all function
+function randomiseAll() {
+
+        //random Color//
+        const randomColor = Math.floor(giveRandomNumber() * 18);   
+        colorChange(randomColor); 
+
+        //random Font Color//
+        const randomFontColor = Math.floor(giveRandomNumber() * 18);   
+        fontColorChange(randomFontColor); 
+
+        //random Alighment//
+        const randomAlighment = Math.floor(giveRandomNumber() * 3);
+        justifyText(randomAlighment); 
+
+        // random Text Decoration  
+        const randomUnderline = Math.floor(giveRandomNumber() * 20);
+        if (randomUnderline <= 10){
+                changeTextDecoration();
+        }
+
+        // random Font Style  
+        const randomStyle = Math.floor(giveRandomNumber() * 6);
+        if (randomStyle <= 3) {
+                changeFontStyle(); 
+        }
+
+        // random Font Weight
+        const randomWeight = Math.floor(giveRandomNumber() * 10);
+        if (randomWeight <= 5) {
+                changeFontWeight();
+        }
+
+        // random Font Size
+        const randomSize = Math.floor(giveRandomNumber() * 3);
+        changesize(randomSize);
+}
+
+
+
+
+//------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// Open & Close Menue`s Function`s
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Open & Close Setings Menu 
+function showSettingsMenu() {
+        const checkSettingsStatus = settingsMenu.style.display; 
+        if (checkSettingsStatus === "none") {
+                settingsMenu.style.display = "flex"; 
+        } else {
+                settingsMenu.style.display = "none"; 
+        }    
+}
+
+// Open & Close Ratio Menu 
+function aspectRatio() {
+        const checkRatioStatus = ratioMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                ratioMenu.style.display = "flex"; 
+        } else {
+                ratioMenu.style.display = "none"; 
+        }    
+}
+
+// Open & Close Position Menu 
+function positionMenu() {
+        const checkRatioStatus = posiMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                posiMenu.style.display = "flex"; 
+        } else {
+                posiMenu.style.display = "none"; 
+        }    
+}
+
+// Open & Close (activate / deactivate) Range Input Menu
+function activatePosi() {
+        const button = document.getElementById("actvataButton");
+        const activate = posiInput.style.display; 
+        if (activate === "none") {
+                posiInput.style.display = "flex"; 
+                button.innerHTML = "Deaktivate";
+                changeRatio(4);
+                document.getElementById("RatioButton").style.display = "none";
+                ratioMenu.style.display = "none"; 
+        } else {
+                posiInput.style.display = "none";
+                button.innerHTML = "Activate" ;
+                quote.style.top = 0;
+                quote.style.left = 0;
+                document.getElementById("RatioButton").style.display = "block";
+        }    
+}
+
+
+
+
+//------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// Quote Styling Function`s
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Quote Position Function  
+function xAxis(){
+        const x = document.getElementById("left-right").value;
+        const image = quote.style; 
+        image.left = x +"px";  
+}
+    
+function yAxis(){
+        const y = document.getElementById("up-Down").value;
+        const image = quote.style;
+        image.top = y +"px";
+}
 
 // Change Font Weight Function   
 function changeFontWeight() {
@@ -109,110 +218,30 @@ function changesize(input) {
         quote.style.fontSize = size;
 }
 
-
-// Randomise all function
-function randomiseAll() {
-
-        //random Color//
-        const randomColor = Math.floor(giveRandomNumber() * 18);   
-        colorChange(randomColor); 
-
-        //random Font Color//
-        const randomFontColor = Math.floor(giveRandomNumber() * 18);   
-        fontColorChange(randomFontColor); 
-
-        //random Alighment//
-        const randomAlighment = Math.floor(giveRandomNumber() * 3);
-        justifyText(randomAlighment); 
-
-        // random Text Decoration  
-        const randomUnderline = Math.floor(giveRandomNumber() * 20);
-        if (randomUnderline <= 10){
-                changeTextDecoration();
+// Font Color Change  Function  
+        function fontColorChange(input) {
+                const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
+                const color = collorArray[input]             
+                quote.style.color = color;
         }
+        
 
-        // random Font Style  
-        const randomStyle = Math.floor(giveRandomNumber() * 6);
-        if (randomStyle <= 3) {
-                changeFontStyle(); 
+
+
+//------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// Quote Background Styling Function`s
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Background Color Change  Function  
+        function colorChange(input) {
+                const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
+                const color = collorArray[input]             
+                quoteBackgroung.style.backgroundColor = color;         
         }
-
-        // random Font Weight
-        const randomWeight = Math.floor(giveRandomNumber() * 10);
-        if (randomWeight <= 5) {
-                changeFontWeight();
-        }
-
-        // random Font Size
-        const randomSize = Math.floor(giveRandomNumber() * 3);
-        changesize(randomSize);
-}
-
-
-// Give Random Number
-function giveRandomNumber() {
-        return Math.random();
-}
-
-
-// Open & Close Setings Menu 
-function showSettingsMenu() {
-        const checkSettingsStatus = settingsMenu.style.display; 
-        if (checkSettingsStatus === "none") {
-                settingsMenu.style.display = "flex"; 
-        } else {
-                settingsMenu.style.display = "none"; 
-        }    
-}
-
-
-
-// Open & Close Ratio Menu 
-
-function aspectRatio() {
-        const checkRatioStatus = ratioMenu.style.display; 
-        if (checkRatioStatus === "none") {
-                ratioMenu.style.display = "flex"; 
-        } else {
-                ratioMenu.style.display = "none"; 
-        }    
-}
-
-//------//
-// Open & Close Ratio Menu 
-//------//
-
-function positionMenu() {
-        const checkRatioStatus = posiMenu.style.display; 
-        if (checkRatioStatus === "none") {
-                posiMenu.style.display = "flex"; 
-        } else {
-                posiMenu.style.display = "none"; 
-        }    
-}
-
-function activatePosi() {
-        const button = document.getElementById("actvataButton");
-        const activate = posiInput.style.display; 
-        if (activate === "none") {
-                posiInput.style.display = "flex"; 
-                button.innerHTML = "Deaktivate";
-                changeRatio(4);
-                document.getElementById("RatioButton").style.display = "none";
-                ratioMenu.style.display = "none"; 
-        } else {
-                posiInput.style.display = "none";
-                button.innerHTML = "Activate" ;
-                quote.style.top = 0;
-                quote.style.left = 0;
-                document.getElementById("RatioButton").style.display = "block";
-        }    
-}
-
-//------//
-// Change Ratio Function
-//------//
-
+        
+// Change Background Ratio Function
 function changeRatio(input) {
         if (input == 1) {
                 quoteBackgroung.style.height = "405px";
@@ -242,20 +271,4 @@ function changeRatio(input) {
                 quote.style.height = "150px";
                 changesize(2);
         }     
-}
-
-//------//
-// Quote Position Function  
-//------//
- 
-function xAxis(){
-        const x = document.getElementById("left-right").value;
-        const image = quote.style; 
-        image.left = x +"px";  
-}
-    
-function yAxis(){
-        const y = document.getElementById("up-Down").value;
-        const image = quote.style;
-        image.top = y +"px";
 }
