@@ -78,9 +78,9 @@ function changeFontWeight() {
 // Alighn Text Function (Left / Center / Right)
 //------//
 function justifyText(input) {
-        const alighments = ["flex-start", "center", "flex-end"]
+        const alighments = ["left", "center", "right"]
         const alighment = alighments[input];
-        document.getElementById("quote-background-flex").style.justifyContent = alighment;
+        quote.style.textAlign = alighment;
 }
 
 //------//
@@ -169,25 +169,89 @@ function aspectRatio() {
 }
 
 //------//
+// Open & Close Ratio Menu 
+//------//
+const posiMenu = document.getElementById("posi"); 
+
+function positionMenu() {
+        const checkRatioStatus = posiMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                posiMenu.style.display = "flex"; 
+        } else {
+                posiMenu.style.display = "none"; 
+        }    
+}
+
+const posiInput = document.getElementById("activate-posi");
+function activatePosi() {
+        const button = document.getElementById("actvataButton");
+        const activate = posiInput.style.display; 
+        if (activate === "none") {
+                posiInput.style.display = "flex"; 
+                button.innerHTML = "Deaktivate";
+                changeRatio(4);
+                document.getElementById("RatioButton").style.display = "none";
+                ratioMenu.style.display = "none"; 
+        } else {
+                posiInput.style.display = "none";
+                button.innerHTML = "Activate" ;
+                quote.style.top = 0;
+                quote.style.left = 0;
+                document.getElementById("RatioButton").style.display = "block";
+        }    
+}
+
+//------//
 // Change Ratio Function
 //------//
 const ratio = document.getElementById("quote-background-flex");
+const quoteBox = document.getElementById("quote");
+const quoteFontSize = document.getElementById("quote").style.fontSize;
+
 
 function changeRatio(input) {
         if (input == 1) {
               ratio.style.height = "405px";
               ratio.style.width = "720px";
+              quoteBox.style.width = "500px";
+              quoteBox.style.height = "200px";
+              changesize(1);
         } 
         if (input == 2) {
                 ratio.style.height = "405px";
                 ratio.style.width = "405px";
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "200px";
+                changesize(0);
         } 
         if (input == 3) {
                 ratio.style.height = "720px";
                 ratio.style.width = "405px";
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "500px";
+                changesize(1);
         } 
         if (input == 4) {
-                ratio.style.height = "400px";
+                ratio.style.height = "405px";
                 ratio.style.width = "1350px";
+                quoteBox.style.width = "800px";
+                quoteBox.style.height = "150px";
+                changesize(2);
         }     
+}
+
+//------//
+// Quote Position Function  
+//------//
+ 
+function xAxis(){
+        const x = document.getElementById("left-right").value;
+        const image = document.getElementById("quote").style; 
+        image.left = x +"px";  
+}
+    
+function yAxis(){
+        const y = document.getElementById("up-Down").value;
+        const image = document.getElementById("quote").style;
+        image.top = y +"px";
 }

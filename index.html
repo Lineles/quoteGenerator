@@ -14,7 +14,7 @@
     
 </head>
     
-<body>
+<body onload="CreatPosition ()">
 
     <nav class="navbar">
         <h1 class="title">Quote Generator</h1>
@@ -40,11 +40,13 @@
         <div class="section-flex">
             <button type="submit" class="button" onclick="showSettingsMenu()">Settings</button> <!-- Important for index.js -->
             
-            <button class="button" id="new-quote" onclick="randomQuote()">New Quote</button>    <!-- Important for index.js -->
-           
             <button type="submit" class="button" onclick="randomiseAll()">Random Style</button>       <!-- Important for index.js -->
             
-            <button type="submit" class="button" onclick="aspectRatio()">Ratio</button>         <!-- Important for index.js -->
+            <button class="button" id="new-quote" onclick="randomQuote()">New Quote</button>    <!-- Important for index.js -->
+            
+            <button type="submit" class="button RatioButton"  id="RatioButton" onclick="aspectRatio()">Ratio</button>         <!-- Important for index.js -->
+            
+            <button type="submit" class="button" onclick="positionMenu()">Position</button>         <!-- Important for index.js -->
         </div>  
         
         
@@ -138,8 +140,22 @@
             </div>
         </div>
 
-        
-       
+        <div class="position-menu" id="posi">
+            <h2 class="setings-heading">Position:</h2>
+            <button onclick="activatePosi()" class="ratio-item" id="actvataButton">Activate</button>
+            <form id="input" >
+                <div class="posi-input" id="activate-posi">   
+                    <div>
+                         <p> X Axis:</p>
+                         <input type="range" class="range-Input" name="left-right" id="left-right" step="1" value="0" min="-240" max="240"  onChange="xAxis()" placeholder="left-right"/>
+                    </div>
+                    <div>
+                         <p> Y Axis:</p> 
+                         <input type="range" class="range-Input" name="up-Down" id="up-Down" step="1" value="0" min="-120" max="120"  onChange="yAxis()" placeholder="up-Down"/>
+                    </div>
+                </div> 
+            </form>
+        </div>
     
         <div class="aspect-ratio-menu" id="ratio">
             <h2 class="setings-heading">Ratio for:</h2>
