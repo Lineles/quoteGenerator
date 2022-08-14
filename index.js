@@ -1,4 +1,15 @@
 //------//
+// CONST (Do not Change) 
+//------//
+const quote = document.getElementById("quote");
+
+
+
+
+
+
+
+//------//
 // Pseudo Array  
 //------//
  let quotes = [
@@ -39,13 +50,13 @@ function colorChange(input) {
 function fontColorChange(input) {
         const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
         const color = collorArray[input]             
-        document.getElementById("quote").style.color = color;
+        quote.style.color = color;
 }
 
 //------//
 // Text Style Change Function    
 //------//
-const quote = document.getElementById("quote");
+
 // Change Font Weight Function   
 function changeFontWeight() {
         const boldStatus = quote.style.fontWeight; 
@@ -89,7 +100,7 @@ function justifyText(input) {
 function changesize(input) {
         const fontsize = ["24px", "32px", "40px"]
         const size = fontsize[input];
-        document.getElementById("quote").style.fontSize = size;
+        quote.style.fontSize = size;
 }
 
 //------//
@@ -205,7 +216,7 @@ function activatePosi() {
 // Change Ratio Function
 //------//
 const ratio = document.getElementById("quote-background-flex");
-const quoteBox = document.getElementById("quote");
+// const quoteBox = document.getElementById("quote");
 const quoteFontSize = document.getElementById("quote").style.fontSize;
 
 
@@ -213,29 +224,29 @@ function changeRatio(input) {
         if (input == 1) {
               ratio.style.height = "405px";
               ratio.style.width = "720px";
-              quoteBox.style.width = "500px";
-              quoteBox.style.height = "200px";
+              quote.style.width = "500px";
+              quote.style.height = "200px";
               changesize(1);
         } 
         if (input == 2) {
                 ratio.style.height = "405px";
                 ratio.style.width = "405px";
-                quoteBox.style.width = "200px";
-                quoteBox.style.height = "200px";
+                quote.style.width = "200px";
+                quote.style.height = "200px";
                 changesize(0);
         } 
         if (input == 3) {
                 ratio.style.height = "720px";
                 ratio.style.width = "405px";
-                quoteBox.style.width = "200px";
-                quoteBox.style.height = "500px";
+                quote.style.width = "200px";
+                quote.style.height = "500px";
                 changesize(1);
         } 
         if (input == 4) {
                 ratio.style.height = "405px";
                 ratio.style.width = "1350px";
-                quoteBox.style.width = "800px";
-                quoteBox.style.height = "150px";
+                quote.style.width = "800px";
+                quote.style.height = "150px";
                 changesize(2);
         }     
 }
@@ -246,12 +257,12 @@ function changeRatio(input) {
  
 function xAxis(){
         const x = document.getElementById("left-right").value;
-        const image = document.getElementById("quote").style; 
+        const image = quote.style; 
         image.left = x +"px";  
 }
     
 function yAxis(){
         const y = document.getElementById("up-Down").value;
-        const image = document.getElementById("quote").style;
+        const image = quote.style;
         image.top = y +"px";
 }
