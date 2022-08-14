@@ -3,6 +3,7 @@
 //------//
 const quote = document.getElementById("quote");
 const quoteBackgroung = document.getElementById("quote-background-flex");
+const settingsMenu = document.getElementById("settings"); 
 
 
 
@@ -65,7 +66,9 @@ function changeFontWeight() {
         } else {
                 quote.style.fontWeight = "normal";
         }    
- }       
+ }  
+ 
+ 
 // Change Font Style Function   
  function changeFontStyle() {
         const italicStatus = quote.style.fontStyle;
@@ -74,7 +77,9 @@ function changeFontWeight() {
         } else {
                 quote.style.fontStyle = "normal" 
         }    
- }    
+ }   
+
+
 // Change Text Decoration Function   
  function changeTextDecoration() {
         const underlinedStatus = quote.style.textDecoration; 
@@ -84,28 +89,25 @@ function changeFontWeight() {
                 quote.style.textDecoration = "none";
         }    
  }       
-        
-//------//
+     
+ 
 // Alighn Text Function (Left / Center / Right)
-//------//
 function justifyText(input) {
         const alighments = ["left", "center", "right"]
         const alighment = alighments[input];
         quote.style.textAlign = alighment;
 }
 
-//------//
+
 // Font Size Change  Function  
-//------//
 function changesize(input) {
         const fontsize = ["24px", "32px", "40px"]
         const size = fontsize[input];
         quote.style.fontSize = size;
 }
 
-//------//
+
 // Randomise all function
-//------//
 function randomiseAll() {
 
         //random Color//
@@ -143,17 +145,14 @@ function randomiseAll() {
         changesize(randomSize);
 }
 
-//------//
+
 // Give Random Number
-//------//
 function giveRandomNumber() {
         return Math.random();
 }
 
-//------//
+
 // Open & Close Setings Menu 
-//------//
-const settingsMenu = document.getElementById("settings"); 
 
 function showSettingsMenu() {
         const checkSettingsStatus = settingsMenu.style.display; 
