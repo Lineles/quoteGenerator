@@ -4,6 +4,7 @@
 const quote = document.getElementById("quote");
 const quoteBackgroung = document.getElementById("quote-background-flex");
 const settingsMenu = document.getElementById("settings"); 
+const ratioMenu = document.getElementById("ratio"); 
 
 
 
@@ -164,10 +165,8 @@ function showSettingsMenu() {
 }
 
 
-//------//
+
 // Open & Close Ratio Menu 
-//------//
-const ratioMenu = document.getElementById("ratio"); 
 
 function aspectRatio() {
         const checkRatioStatus = ratioMenu.style.display; 
