@@ -91,15 +91,16 @@ button {
     display: block;
     width: 1000px; /**(important for index.js)**/
     height: 100px; /**(important for index.js)**/
-    border: solid black 2px;
     top: 0px;  /**(important for index.js)**/
     left: 0px; /**(important for index.js)**/
-
+    
     font-style: italic; /**(important for index.js)**/
     font-weight: normal; /**(important for index.js)**/
     text-decoration: none; /**(important for index.js)**/
     font-size: 32px; /**(important for index.js)**/
     text-align: center; /**(important for index.js)**/
+
+    /* border: solid black 2px; */
   }
   
 
@@ -128,6 +129,7 @@ button {
     .RatioButton{
       display: block; /**(important for index.js)**/
     }
+
 
   /**/
   /** Settings Structur **/
@@ -226,6 +228,7 @@ button {
 .ratio-item:hover{
   border: solid 4px green;
 }
+
 
   /**/
   /** Position input  **/
