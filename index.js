@@ -189,11 +189,15 @@ function activatePosi() {
         if (activate === "none") {
                 posiInput.style.display = "flex"; 
                 button.innerHTML = "Deaktivate";
+                changeRatio(4);
+                document.getElementById("RatioButton").style.display = "none";
+                ratioMenu.style.display = "none"; 
         } else {
                 posiInput.style.display = "none";
                 button.innerHTML = "Activate" ;
                 quote.style.top = 0;
                 quote.style.left = 0;
+                document.getElementById("RatioButton").style.display = "block";
         }    
 }
 
