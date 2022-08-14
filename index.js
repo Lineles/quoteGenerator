@@ -6,6 +6,7 @@ const quoteBackgroung = document.getElementById("quote-background-flex");
 const settingsMenu = document.getElementById("settings"); 
 const ratioMenu = document.getElementById("ratio"); 
 const posiMenu = document.getElementById("posi"); 
+const posiInput = document.getElementById("activate-posi");
 
 
 
@@ -16,7 +17,7 @@ const posiMenu = document.getElementById("posi");
 // Pseudo Array  
 //------//
  let quotes = [
-        "The way to get started is to quit talking and begin doing. - Walt Disney",
+         "The way to get started is to quit talking and begin doing. - Walt Disney",
         "The journey of a thousand miles begins with one step. - Lao Tzu",
         "That which does not kill us makes us stronger. - Friedrich Nietzsche",
         "You must be the change you wish to see in the world. - Mahatma Gandhi",
@@ -26,38 +27,38 @@ const posiMenu = document.getElementById("posi");
         "If you judge people, you have no time to love them. - Mother Teresa",
         "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
         "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
-     ]           
+]           
 
  let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
  let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
-
-//------//
-// Quote Change Function  
-//------//
-function randomQuote() {
-document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
-}
-
-//------//
-// Color Change  Function  
-//------//
-function colorChange(input) {
-        const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
-        const color = collorArray[input]             
-        quoteBackgroung.style.backgroundColor = color;         
-}
-
-//------//
-// Font Color Change  Function  
-//------//
-function fontColorChange(input) {
-        const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
-        const color = collorArray[input]             
-        quote.style.color = color;
-}
-
-//------//
-// Text Style Change Function    
+ 
+ //------//
+ // Quote Change Function  
+ //------//
+ function randomQuote() {
+         document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+        
+        //------//
+        // Color Change  Function  
+        //------//
+        function colorChange(input) {
+                const collorArray = ["#FAA4A4", "#F8BCBC", "#FEECE5", "#D0D194", "#AFB56B", "#B3876F", "#98B462", "#BDD588", "#DAF0BC", "#EBFBE0", "#79C7A0", "#2A9899", "#620F5B", "#B52F70", "#ED6661", "#EDB435", "#96A53A", "#6F8026"];
+                const color = collorArray[input]             
+                quoteBackgroung.style.backgroundColor = color;         
+        }
+        
+        //------//
+        // Font Color Change  Function  
+        //------//
+        function fontColorChange(input) {
+                const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
+                const color = collorArray[input]             
+                quote.style.color = color;
+        }
+        
+        //------//
+        // Text Style Change Function    
 //------//
 
 // Change Font Weight Function   
@@ -68,11 +69,11 @@ function changeFontWeight() {
         } else {
                 quote.style.fontWeight = "normal";
         }    
- }  
- 
- 
+}  
+
+
 // Change Font Style Function   
- function changeFontStyle() {
+function changeFontStyle() {
         const italicStatus = quote.style.fontStyle;
         if (italicStatus === "normal"){
                 quote.style.fontStyle = "italic" 
@@ -190,7 +191,6 @@ function positionMenu() {
         }    
 }
 
-const posiInput = document.getElementById("activate-posi");
 function activatePosi() {
         const button = document.getElementById("actvataButton");
         const activate = posiInput.style.display; 
