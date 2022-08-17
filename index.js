@@ -170,9 +170,11 @@ function yAxis(){
 function changeFontWeight() {
         const boldStatus = quote.style.fontWeight; 
         if (boldStatus === "normal"){
-                quote.style.fontWeight = "bold"; 
+                quote.style.fontWeight = "bold";
+                quoteAuthor.style.fontWeight = "bold";
         } else {
                 quote.style.fontWeight = "normal";
+                quoteAuthor.style.fontWeight = "normal";
         }    
 }  
 
@@ -181,9 +183,11 @@ function changeFontWeight() {
 function changeFontStyle() {
         const italicStatus = quote.style.fontStyle;
         if (italicStatus === "normal"){
-                quote.style.fontStyle = "italic" 
+                quote.style.fontStyle = "italic";
+                quoteAuthor.style.fontStyle = "italic"; 
         } else {
-                quote.style.fontStyle = "normal" 
+                quote.style.fontStyle = "normal";
+                quoteAuthor.style.fontStyle = "normal"; 
         }    
  }   
 
@@ -193,8 +197,10 @@ function changeFontStyle() {
         const underlinedStatus = quote.style.textDecoration; 
         if (underlinedStatus === "none"){
                 quote.style.textDecoration = "underline";
+                quoteAuthor.style.textDecoration = "underline";
         } else {
                 quote.style.textDecoration = "none";
+                quoteAuthor.style.textDecoration = "none";
         }    
  }       
      
@@ -204,6 +210,7 @@ function justifyText(input) {
         const alighments = ["left", "center", "right"]
         const alighment = alighments[input];
         quote.style.textAlign = alighment;
+        quoteAuthor.style.textAlign = alighment;
 }
 
 
@@ -212,6 +219,7 @@ function changesize(input) {
         const fontsize = ["24px", "32px", "40px"]
         const size = fontsize[input];
         quote.style.fontSize = size;
+        quoteAuthor.style.fontSize = size;
 }
 
 // Font Color Change  Function  
@@ -219,6 +227,7 @@ function changesize(input) {
                 const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
                 const color = collorArray[input]             
                 quote.style.color = color;
+                quoteAuthor.style.color = color;
         }
         
 
