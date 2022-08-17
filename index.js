@@ -10,37 +10,32 @@ const posiMenu = document.getElementById("posi");
 const posiInput = document.getElementById("activate-posi");
 
 
-
-
-
-
 //------//
 // Pseudo Array  
 //------//
- let quotes = [
-         "The way to get started is to quit talking and begin doing. - Walt Disney",
-        "The journey of a thousand miles begins with one step. - Lao Tzu",
-        "That which does not kill us makes us stronger. - Friedrich Nietzsche",
-        "You must be the change you wish to see in the world. - Mahatma Gandhi",
-        "Whether you think you can or you think you can’t, you’re right. - Henry Ford",
-        "Life is like a box of chocolates. You never know what you’re going to get. - Forrest Gump",
-        "Dream big and dare to fail. - Norman Vaughan",
-        "If you judge people, you have no time to love them. - Mother Teresa",
-        "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
-        "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
+let quotes = [
+        "The way to get started is to quit talking and begin doing. - Walt Disney",
+       "The journey of a thousand miles begins with one step. - Lao Tzu",
+       "That which does not kill us makes us stronger. - Friedrich Nietzsche",
+       "You must be the change you wish to see in the world. - Mahatma Gandhi",
+       "Whether you think you can or you think you can’t, you’re right. - Henry Ford",
+       "Life is like a box of chocolates. You never know what you’re going to get. - Forrest Gump",
+       "Dream big and dare to fail. - Norman Vaughan",
+       "If you judge people, you have no time to love them. - Mother Teresa",
+       "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
+       "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
 ]           
 
- let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
- let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
- 
- //------//
- // Quote Change Function  
- //------//
- function randomQuote() {
-         document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
-        }
-        
+let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
+let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
 
+//------//
+// Quote Change Function  
+//------//
+function randomQuote() {
+        document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+       }
+       
 //------//
 //-----------------------------------------------------------------------------------------------------------------------------------------------//
 // Randomise Function`s
@@ -136,7 +131,7 @@ function activatePosi() {
         if (activate === "none") {
                 posiInput.style.display = "flex"; 
                 button.innerHTML = "Deaktivate";
-                changeRatio(4);
+          changeRatio(4);      
                 document.getElementById("RatioButton").style.display = "none";
                 ratioMenu.style.display = "none"; 
         } else {
