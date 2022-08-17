@@ -138,8 +138,8 @@ function activatePosi() {
         } else {
                 posiInput.style.display = "none";
                 button.innerHTML = "Activate" ;
-                quote.style.top = 0;
-                quote.style.left = 0;
+                quoteBox.style.top = 0;
+                quoteBox.style.left = 0;
                 document.getElementById("RatioButton").style.display = "block";
         }    
 }
@@ -156,13 +156,13 @@ function activatePosi() {
 // Quote Position Function  
 function xAxis(){
         const x = document.getElementById("left-right").value;
-        const image = quote.style; 
+        const image = quoteBox.style; 
         image.left = x +"px";  
 }
     
 function yAxis(){
         const y = document.getElementById("up-Down").value;
-        const image = quote.style;
+        const image = quoteBox.style;
         image.top = y +"px";
 }
 
@@ -242,29 +242,25 @@ function changeRatio(input) {
         if (input == 1) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "720px";
-              quote.style.width = "500px";
-              quote.style.height = "200px";
-              changesize(1);
+                quoteBox.style.width = "500px";
+                quoteBox.style.height = "200px";
         } 
         if (input == 2) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "405px";
-                quote.style.width = "200px";
-                quote.style.height = "200px";
-                changesize(0);
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "200px";
         } 
         if (input == 3) {
                 quoteBackgroung.style.height = "720px";
                 quoteBackgroung.style.width = "405px";
-                quote.style.width = "200px";
-                quote.style.height = "500px";
-                changesize(1);
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "500px";
         } 
         if (input == 4) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "1350px";
-                quote.style.width = "800px";
-                quote.style.height = "150px";
-                changesize(2);
+                quoteBox.style.width = "800px";
+                quoteBox.style.height = "150px";
         }     
 }
