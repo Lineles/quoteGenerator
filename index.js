@@ -8,7 +8,8 @@ const settingsMenu = document.getElementById("settings");
 const ratioMenu = document.getElementById("ratio"); 
 const posiMenu = document.getElementById("posi"); 
 const posiInput = document.getElementById("activate-posi");
-
+const quoteBox = document.getElementById("quoteBox");
+const quoteAuthor = document.getElementById("author"); 
 
 //------//
 // Pseudo Array  
