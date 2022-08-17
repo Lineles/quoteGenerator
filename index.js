@@ -8,39 +8,35 @@ const settingsMenu = document.getElementById("settings");
 const ratioMenu = document.getElementById("ratio"); 
 const posiMenu = document.getElementById("posi"); 
 const posiInput = document.getElementById("activate-posi");
-
-
-
-
-
+const quoteBox = document.getElementById("quoteBox");
+const quoteAuthor = document.getElementById("author"); 
 
 //------//
 // Pseudo Array  
 //------//
- let quotes = [
-         "The way to get started is to quit talking and begin doing. - Walt Disney",
-        "The journey of a thousand miles begins with one step. - Lao Tzu",
-        "That which does not kill us makes us stronger. - Friedrich Nietzsche",
-        "You must be the change you wish to see in the world. - Mahatma Gandhi",
-        "Whether you think you can or you think you can’t, you’re right. - Henry Ford",
-        "Life is like a box of chocolates. You never know what you’re going to get. - Forrest Gump",
-        "Dream big and dare to fail. - Norman Vaughan",
-        "If you judge people, you have no time to love them. - Mother Teresa",
-        "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
-        "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
+let quotes = [
+        "The way to get started is to quit talking and begin doing. - Walt Disney",
+       "The journey of a thousand miles begins with one step. - Lao Tzu",
+       "That which does not kill us makes us stronger. - Friedrich Nietzsche",
+       "You must be the change you wish to see in the world. - Mahatma Gandhi",
+       "Whether you think you can or you think you can’t, you’re right. - Henry Ford",
+       "Life is like a box of chocolates. You never know what you’re going to get. - Forrest Gump",
+       "Dream big and dare to fail. - Norman Vaughan",
+       "If you judge people, you have no time to love them. - Mother Teresa",
+       "Don’t be afraid to give up the good to go for the great. - John D. Rockefeller",
+       "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. - Mark Twain"
 ]           
 
- let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
- let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
- 
- //------//
- // Quote Change Function  
- //------//
- function randomQuote() {
-         document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
-        }
-        
+let firstQuote = quotes[Math.floor(Math.random() * quotes.length)];
+let displayQuote = document.getElementById("quote").innerHTML = `${firstQuote}`;
 
+//------//
+// Quote Change Function  
+//------//
+function randomQuote() {
+        document.getElementById("quote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+       }
+       
 //------//
 //-----------------------------------------------------------------------------------------------------------------------------------------------//
 // Randomise Function`s
@@ -136,14 +132,14 @@ function activatePosi() {
         if (activate === "none") {
                 posiInput.style.display = "flex"; 
                 button.innerHTML = "Deaktivate";
-                changeRatio(4);
+          changeRatio(4);      
                 document.getElementById("RatioButton").style.display = "none";
                 ratioMenu.style.display = "none"; 
         } else {
                 posiInput.style.display = "none";
                 button.innerHTML = "Activate" ;
-                quote.style.top = 0;
-                quote.style.left = 0;
+                quoteBox.style.top = 0;
+                quoteBox.style.left = 0;
                 document.getElementById("RatioButton").style.display = "block";
         }    
 }
@@ -160,13 +156,13 @@ function activatePosi() {
 // Quote Position Function  
 function xAxis(){
         const x = document.getElementById("left-right").value;
-        const image = quote.style; 
+        const image = quoteBox.style; 
         image.left = x +"px";  
 }
     
 function yAxis(){
         const y = document.getElementById("up-Down").value;
-        const image = quote.style;
+        const image = quoteBox.style;
         image.top = y +"px";
 }
 
@@ -174,9 +170,11 @@ function yAxis(){
 function changeFontWeight() {
         const boldStatus = quote.style.fontWeight; 
         if (boldStatus === "normal"){
-                quote.style.fontWeight = "bold"; 
+                quote.style.fontWeight = "bold";
+                quoteAuthor.style.fontWeight = "bold";
         } else {
                 quote.style.fontWeight = "normal";
+                quoteAuthor.style.fontWeight = "normal";
         }    
 }  
 
@@ -185,9 +183,11 @@ function changeFontWeight() {
 function changeFontStyle() {
         const italicStatus = quote.style.fontStyle;
         if (italicStatus === "normal"){
-                quote.style.fontStyle = "italic" 
+                quote.style.fontStyle = "italic";
+                quoteAuthor.style.fontStyle = "italic"; 
         } else {
-                quote.style.fontStyle = "normal" 
+                quote.style.fontStyle = "normal";
+                quoteAuthor.style.fontStyle = "normal"; 
         }    
  }   
 
@@ -197,8 +197,10 @@ function changeFontStyle() {
         const underlinedStatus = quote.style.textDecoration; 
         if (underlinedStatus === "none"){
                 quote.style.textDecoration = "underline";
+                quoteAuthor.style.textDecoration = "underline";
         } else {
                 quote.style.textDecoration = "none";
+                quoteAuthor.style.textDecoration = "none";
         }    
  }       
      
@@ -208,6 +210,7 @@ function justifyText(input) {
         const alighments = ["left", "center", "right"]
         const alighment = alighments[input];
         quote.style.textAlign = alighment;
+        quoteAuthor.style.textAlign = alighment;
 }
 
 
@@ -216,6 +219,7 @@ function changesize(input) {
         const fontsize = ["24px", "32px", "40px"]
         const size = fontsize[input];
         quote.style.fontSize = size;
+        quoteAuthor.style.fontSize = size;
 }
 
 // Font Color Change  Function  
@@ -223,6 +227,7 @@ function changesize(input) {
                 const collorArray = ["#030303", "#353535", "#7C7C7C", "#AFAFAF", "#DBDBDB", "#FEFEFE", "#8931EF", "#F2CA19", "#FF00BD", "#0057E9", "#87E911", "#E11845", "#8BB447", "#428F6F", "#D7B26B", "#E3D6B1", "#DF8879", "#35628A"];
                 const color = collorArray[input]             
                 quote.style.color = color;
+                quoteAuthor.style.color = color;
         }
         
 
@@ -246,29 +251,25 @@ function changeRatio(input) {
         if (input == 1) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "720px";
-              quote.style.width = "500px";
-              quote.style.height = "200px";
-              changesize(1);
+                quoteBox.style.width = "500px";
+                quoteBox.style.height = "200px";
         } 
         if (input == 2) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "405px";
-                quote.style.width = "200px";
-                quote.style.height = "200px";
-                changesize(0);
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "200px";
         } 
         if (input == 3) {
                 quoteBackgroung.style.height = "720px";
                 quoteBackgroung.style.width = "405px";
-                quote.style.width = "200px";
-                quote.style.height = "500px";
-                changesize(1);
+                quoteBox.style.width = "200px";
+                quoteBox.style.height = "500px";
         } 
         if (input == 4) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "1350px";
-                quote.style.width = "800px";
-                quote.style.height = "150px";
-                changesize(2);
+                quoteBox.style.width = "800px";
+                quoteBox.style.height = "150px";
         }     
 }
