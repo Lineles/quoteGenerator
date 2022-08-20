@@ -106,16 +106,6 @@ button {
 
     /* border: solid black 2px; */
   }
-  
-  #author{
-    font-style: italic; /**(important for index.js)**/
-    font-weight: normal; /**(important for index.js)**/
-    text-decoration: none; /**(important for index.js)**/
-    font-size: 32px; /**(important for index.js)**/
-    text-align: center; /**(important for index.js)**/
-
-    /* border: solid black 2px; */
-  }
 
   
   /**/
