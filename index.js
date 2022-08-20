@@ -9,7 +9,6 @@ const ratioMenu = document.getElementById("ratio");
 const posiMenu = document.getElementById("posi"); 
 const posiInput = document.getElementById("activate-posi");
 const quoteBox = document.getElementById("quoteBox");
-const quoteAuthor = document.getElementById("author"); 
 
 
 // Quote Change Function  
@@ -22,8 +21,7 @@ function fetchQuotes() {
                 let randomNumber = Math.floor(Math.random() * 10);
                 let quotes = data.data[randomNumber].quoteText;
                 let authors = data.data[randomNumber].quoteAuthor;
-                quote.innerHTML = quotes;
-                quoteAuthor.innerHTML = authors;
+                quote.innerHTML = quotes + "<br>" + "-" + authors;
           })
 }
 
