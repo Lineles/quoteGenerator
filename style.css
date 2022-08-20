@@ -93,7 +93,7 @@ button {
     height: 100px; /**(important for index.js)**/
     top: 0px;  /**(important for index.js)**/
     left: 0px; /**(important for index.js)**/
-    /* border: solid black 2px; */
+    border: solid black 2px;
   }
 
 
