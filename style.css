@@ -88,26 +88,18 @@ button {
   
   #quoteBox{
     position: relative;
-    display: block;
-    width: 1000px; /**(important for index.js)**/
-    height: 100px; /**(important for index.js)**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px; /**(important for index.js)**/
+    height: 350px; /**(important for index.js)**/
     top: 0px;  /**(important for index.js)**/
     left: 0px; /**(important for index.js)**/
-    border: solid black 2px;
+    /* border: solid black 2px; */
   }
 
 
   #quote{
-    font-style: italic; /**(important for index.js)**/
-    font-weight: normal; /**(important for index.js)**/
-    text-decoration: none; /**(important for index.js)**/
-    font-size: 32px; /**(important for index.js)**/
-    text-align: center; /**(important for index.js)**/
-
-    /* border: solid black 2px; */
-  }
-  
-  #author{
     font-style: italic; /**(important for index.js)**/
     font-weight: normal; /**(important for index.js)**/
     text-decoration: none; /**(important for index.js)**/
@@ -293,4 +285,12 @@ button {
   .footer-image {
    height: 40px;
    margin: 8px;
+  }
+
+
+
+  .secred-feature-button{
+    margin: 10px;
+    color: #F6F2EF;
+    border: #F6F2EF;
   }
