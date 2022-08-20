@@ -111,56 +111,12 @@ function aspectRatio() {
         }    
 }
 
-// Open & Close Position Menu 
-function positionMenu() {
-        const checkRatioStatus = posiMenu.style.display; 
-        if (checkRatioStatus === "none") {
-                posiMenu.style.display = "flex"; 
-        } else {
-                posiMenu.style.display = "none"; 
-        }    
-}
-
-// Open & Close (activate / deactivate) Range Input Menu
-function activatePosi() {
-        const button = document.getElementById("actvataButton");
-        const activate = posiInput.style.display; 
-        if (activate === "none") {
-                posiInput.style.display = "flex"; 
-                button.innerHTML = "Deaktivate";
-          changeRatio(4);      
-                document.getElementById("RatioButton").style.display = "none";
-                ratioMenu.style.display = "none"; 
-        } else {
-                posiInput.style.display = "none";
-                button.innerHTML = "Activate" ;
-                quoteBox.style.top = 0;
-                quoteBox.style.left = 0;
-                document.getElementById("RatioButton").style.display = "block";
-        }    
-}
-
-
-
 
 //------//
 //-----------------------------------------------------------------------------------------------------------------------------------------------//
 // Quote Styling Function`s
 //-----------------------------------------------------------------------------------------------------------------------------------------------//
 
-
-// Quote Position Function  
-function xAxis(){
-        const x = document.getElementById("left-right").value;
-        const image = quoteBox.style; 
-        image.left = x +"px";  
-}
-    
-function yAxis(){
-        const y = document.getElementById("up-Down").value;
-        const image = quoteBox.style;
-        image.top = y +"px";
-}
 
 // Change Font Weight Function   
 function changeFontWeight() {
@@ -238,25 +194,79 @@ function changeRatio(input) {
         if (input == 1) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "720px";
-                quoteBox.style.width = "500px";
-                quoteBox.style.height = "200px";
+                quoteBox.style.width = "700px";
+                quoteBox.style.height = "350px";
+                changesize(1)
         } 
         if (input == 2) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "405px";
-                quoteBox.style.width = "200px";
-                quoteBox.style.height = "200px";
+                quoteBox.style.width = "300px";
+                quoteBox.style.height = "300px";
+                changesize(0)
         } 
         if (input == 3) {
                 quoteBackgroung.style.height = "720px";
                 quoteBackgroung.style.width = "405px";
-                quoteBox.style.width = "200px";
-                quoteBox.style.height = "500px";
+                quoteBox.style.width = "350px";
+                quoteBox.style.height = "700px";
+                changesize(1)
         } 
         if (input == 4) {
                 quoteBackgroung.style.height = "405px";
                 quoteBackgroung.style.width = "1350px";
-                quoteBox.style.width = "800px";
-                quoteBox.style.height = "150px";
+                quoteBox.style.width = "1200px";
+                quoteBox.style.height = "350px";
+                changesize(1)
         }     
+}
+
+
+//------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------//
+// Position Feature (!!!does not work correctly!!!!)
+//---------------------------------------------------------------------------------------------------
+
+
+// Open & Close Position Menu 
+function positionMenu() {
+        const checkRatioStatus = posiMenu.style.display; 
+        if (checkRatioStatus === "none") {
+                posiMenu.style.display = "flex"; 
+        } else {
+                posiMenu.style.display = "none"; 
+        }    
+}
+
+// Open & Close (activate / deactivate) Range Input Menu
+function activatePosi() {
+        const button = document.getElementById("actvataButton");
+        const activate = posiInput.style.display; 
+        if (activate === "none") {
+                posiInput.style.display = "flex"; 
+                button.innerHTML = "Deaktivate";
+          changeRatio(4);      
+                document.getElementById("RatioButton").style.display = "none";
+                ratioMenu.style.display = "none"; 
+        } else {
+                posiInput.style.display = "none";
+                button.innerHTML = "Activate" ;
+                quoteBox.style.top = 0;
+                quoteBox.style.left = 0;
+                document.getElementById("RatioButton").style.display = "block";
+        }    
+}
+
+
+// Quote Position Function  
+function xAxis(){
+        const x = document.getElementById("left-right").value;
+        const image = quoteBox.style; 
+        image.left = x +"px";  
+}
+    
+function yAxis(){
+        const y = document.getElementById("up-Down").value;
+        const image = quoteBox.style;
+        image.top = y +"px";
 }
