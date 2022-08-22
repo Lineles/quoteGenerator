@@ -79,7 +79,7 @@ button {
     margin-bottom: 30px;
     height: 400px; /**(important for index.js)**/
     width: 1350px; /**(important for index.js)**/
-    background-color: #ED6661;
+    background-color: #F4E6D7;
     border: solid 2px var(--primary-black-color);
     border-radius: 40px;
     position: relative;
